@@ -1,0 +1,2063 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3d4a36">
+  <meta name="description" content="So here’s to the friend who was once Unknown. — Until We Say Hello Again by Nijaswini Nandru.">
+  <title>Until We Say Hello Again — NIJAASWINI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+/* ==========================================================================
+   NIJAASWINI — MASTER LITERARY DESIGN SYSTEM
+   Author: Nijaswini Nandru
+   "Thoughts that stay..."
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root {
+  /* Warm Literary Palette (Default Light) */
+  --bg-page: #fbf8f1;
+  --bg-page-tint: #f5efe3;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f7f2e7;
+  --bg-surface: #ede5d5;
+  --bg-glass: rgba(251, 248, 241, 0.88);
+  --bg-glass-card: rgba(255, 255, 255, 0.85);
+
+  --color-ink: #221d19;
+  --color-ink-headings: #191410;
+  --color-ink-muted: #5a5148;
+  --color-ink-subtle: #7c7268;
+
+  --color-olive: #3d4a36;
+  --color-olive-dark: #2a3325;
+  --color-olive-light: #526349;
+  --color-olive-soft: rgba(61, 74, 54, 0.08);
+
+  --color-earth: #6b5745;
+  --color-earth-soft: rgba(107, 87, 69, 0.1);
+
+  --color-gold: #c49a45;
+  --color-gold-bright: #dfb55c;
+  --color-gold-soft: rgba(196, 154, 69, 0.16);
+  --color-gold-border: rgba(196, 154, 69, 0.38);
+
+  --color-amber: #de7e43;
+  --color-amber-soft: rgba(222, 126, 67, 0.12);
+
+  --border-delicate: rgba(90, 81, 72, 0.14);
+  --border-gold: rgba(196, 154, 69, 0.32);
+
+  --shadow-sm: 0 2px 8px rgba(34, 29, 25, 0.04);
+  --shadow-md: 0 8px 24px rgba(34, 29, 25, 0.07);
+  --shadow-lg: 0 16px 40px rgba(34, 29, 25, 0.1);
+  --shadow-gold: 0 8px 28px rgba(196, 154, 69, 0.15);
+
+  /* Fonts */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-reading-width: 760px;
+  --header-height: 74px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-smooth: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Warm Dark Theme (Espresso, Amber & Gold) */
+body.dark-mode {
+  --bg-page: #151311;
+  --bg-page-tint: #1c1815;
+  --bg-card: #201b17;
+  --bg-card-subtle: #27221d;
+  --bg-surface: #2d2722;
+  --bg-glass: rgba(21, 19, 17, 0.92);
+  --bg-glass-card: rgba(32, 27, 23, 0.9);
+
+  --color-ink: #f0e9dc;
+  --color-ink-headings: #fcf8f0;
+  --color-ink-muted: #b8ab9a;
+  --color-ink-subtle: #948674;
+
+  --color-olive: #687e5b;
+  --color-olive-dark: #819b71;
+  --color-olive-light: #9ab48b;
+  --color-olive-soft: rgba(104, 126, 91, 0.18);
+
+  --color-earth: #b29b86;
+  --color-earth-soft: rgba(178, 155, 134, 0.15);
+
+  --color-gold: #dfb55c;
+  --color-gold-bright: #ebd082;
+  --color-gold-soft: rgba(223, 181, 92, 0.2);
+  --color-gold-border: rgba(223, 181, 92, 0.45);
+
+  --color-amber: #e8915b;
+  --color-amber-soft: rgba(232, 145, 91, 0.18);
+
+  --border-delicate: rgba(240, 233, 220, 0.1);
+  --border-gold: rgba(223, 181, 92, 0.35);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 8px 28px rgba(223, 181, 92, 0.2);
+}
+
+/* Base Reset & Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+/* Skip link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--color-olive);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  font-weight: 500;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Layout Wrappers */
+.section-wrap {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.reading-wrap {
+  max-width: var(--max-reading-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Section Headings */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-delicate);
+  padding-bottom: 20px;
+}
+
+.eyebrow {
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: "❧";
+  font-size: 0.95rem;
+  color: var(--color-olive);
+}
+
+.section-heading h2 {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-ink-headings);
+  line-height: 1.2;
+}
+
+.section-heading h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.heading-note {
+  font-size: 0.92rem;
+  color: var(--color-ink-subtle);
+  font-style: italic;
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+}
+
+/* ==========================================================================
+   SITE HEADER & NAVIGATION
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-delicate);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(16px, 4vw, 48px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-ink-headings);
+}
+
+.wordmark .brand-leaf {
+  font-size: 1.45rem;
+  color: var(--color-olive);
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.wordmark:hover .brand-leaf {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordmark-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-ink-headings);
+}
+
+.wordmark-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.site-nav a {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  position: relative;
+  padding: 6px 0;
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.25s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-ink-headings);
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  width: 100%;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  transition: var(--transition-smooth);
+}
+
+.search-box:focus-within {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px var(--color-gold-soft);
+  background: var(--bg-card);
+}
+
+.search-box span {
+  font-size: 0.95rem;
+  color: var(--color-gold);
+}
+
+.search-box input {
+  font-size: 0.86rem;
+  width: 140px;
+  transition: width 0.25s ease;
+}
+
+.search-box input:focus {
+  width: 190px;
+  outline: none;
+}
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.theme-toggle:hover {
+  background: var(--color-gold-soft);
+  border-color: var(--color-gold);
+  transform: rotate(20deg);
+}
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   BUTTONS & ACCENTS
+   ========================================================================== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 28px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.03em;
+}
+
+.button-primary {
+  background-color: var(--color-olive);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(61, 74, 54, 0.28);
+}
+
+.button-primary:hover {
+  background-color: var(--color-olive-dark);
+  box-shadow: 0 6px 20px rgba(61, 74, 54, 0.4);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--color-ink-headings);
+  border: 1px solid var(--border-gold);
+}
+
+.button-secondary:hover {
+  background: var(--color-gold-soft);
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.button-light {
+  background: #ffffff;
+  color: var(--color-ink-headings);
+  box-shadow: var(--shadow-md);
+}
+
+.button-light:hover {
+  background: var(--bg-page-tint);
+  transform: translateY(-2px);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  cursor: pointer;
+}
+
+.text-link:hover {
+  color: var(--color-gold);
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   HERO SECTION & CINEMATIC CHARACTER STAGE
+   ========================================================================== */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  padding: 40px clamp(24px, 5vw, 64px);
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-copy {
+  z-index: 10;
+  max-width: 620px;
+}
+
+.hero-tagline {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--color-gold);
+  line-height: 1.1;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  color: var(--color-ink-headings);
+  letter-spacing: -0.015em;
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+  display: inline-block;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  margin-bottom: 36px;
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-delicate);
+}
+
+.hero-stats span {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats b {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-olive);
+  line-height: 1;
+}
+
+.hero-stats small {
+  font-size: 0.78rem;
+  color: var(--color-ink-subtle);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Character Stage & Canvas Scrubbing Engine */
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: clamp(520px, 75vh, 760px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.character-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.18) 0%, rgba(61, 74, 54, 0.1) 60%, transparent 85%);
+  box-shadow: inset 0 0 0 1px var(--border-gold);
+  cursor: ew-resize;
+}
+
+.character-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Atmospheric decorative rings behind character */
+.stage-halo {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 1px dashed var(--color-gold-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: slowSpin 120s linear infinite;
+}
+
+.stage-halo-inner {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+@keyframes slowSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Floating literary note pills */
+.floating-note {
+  position: absolute;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-gold);
+  font-family: var(--font-script);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0.4s ease;
+}
+
+.note-top {
+  top: 40px;
+  right: 20px;
+  transform: rotate(2.5deg);
+}
+
+.note-bottom {
+  bottom: 85px;
+  left: 20px;
+  font-size: 1.15rem;
+  transform: rotate(-2deg);
+}
+
+/* Scrubber Telemetry & Controls Pill */
+.scrub-telemetry-pill {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(22, 19, 17, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f0e9dc;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(223, 181, 92, 0.4);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 15;
+  pointer-events: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 95%;
+}
+
+.telemetry-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-gold-bright);
+  font-weight: 600;
+}
+
+.telemetry-indicator .pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-gold-bright);
+  box-shadow: 0 0 8px var(--color-gold-bright);
+  animation: dotPulse 2s infinite ease-in-out;
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.telemetry-hint {
+  color: #c4b9a8;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+.telemetry-frame-num {
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   VALUES & ETHOS STRIP
+   ========================================================================== */
+.values-strip {
+  background: var(--bg-card-subtle);
+  border-top: 1px solid var(--border-delicate);
+  border-bottom: 1px solid var(--border-delicate);
+  padding: 28px clamp(24px, 5vw, 64px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.2fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.values-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.value-icon {
+  font-size: 1.4rem;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.value-text b {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-ink-headings);
+  font-weight: 600;
+}
+
+.value-text small {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-ink-subtle);
+  margin-top: 2px;
+}
+
+.values-quote {
+  font-family: var(--font-script);
+  font-size: 1.45rem;
+  color: var(--color-olive);
+  text-align: right;
+  line-height: 1.25;
+  border-left: 1px solid var(--border-delicate);
+  padding-left: 24px;
+}
+
+/* ==========================================================================
+   DOORWAYS / CATEGORY CARDS
+   ========================================================================== */
+.category-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.category-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold-border);
+}
+
+.category-photo-wrap {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+}
+
+.category-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-card:hover .category-photo {
+  transform: scale(1.06);
+}
+
+.category-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category-order {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.category-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 8px;
+}
+
+.category-info p {
+  font-size: 0.88rem;
+  color: var(--color-ink-muted);
+  line-height: 1.55;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.category-action {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.category-card:hover .category-action {
+  color: var(--color-gold);
+}
+
+/* ==========================================================================
+   FEATURED POEM SECTION
+   ========================================================================== */
+.featured-section {
+  padding-bottom: 80px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.featured-visual {
+  position: relative;
+  min-height: 420px;
+  background-color: var(--bg-surface);
+  overflow: hidden;
+}
+
+.featured-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.featured-card:hover .featured-visual img {
+  transform: scale(1.04);
+}
+
+.featured-stamp {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(22, 19, 17, 0.82);
+  color: var(--color-gold-bright);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  border: 1px solid rgba(223, 181, 92, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.featured-visual-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  color: #ffffff;
+  font-family: var(--font-script);
+  font-size: 1.45rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.featured-content {
+  padding: clamp(32px, 5vw, 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-meta {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.featured-content h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--color-ink-headings);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.featured-excerpt {
+  font-family: var(--font-editorial);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--color-ink-muted);
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.featured-footnote {
+  margin-top: 20px;
+  font-size: 0.82rem;
+  color: var(--color-ink-subtle);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   WRITINGS COLLECTION & FILTERING
+   ========================================================================== */
+.writing-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.writing-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: inline-flex;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-full);
+  padding: 4px;
+  gap: 4px;
+}
+
+.filter {
+  padding: 8px 22px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter:hover {
+  color: var(--color-ink-headings);
+}
+
+.filter.active {
+  background: var(--color-olive);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(61, 74, 54, 0.25);
+}
+
+.writing-count-badge {
+  font-size: 0.85rem;
+  color: var(--color-ink-subtle);
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+}
+
+/* Post Cards Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.post-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold-border);
+}
+
+.post-card-btn {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.post-art {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-surface);
+}
+
+.post-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.post-card:hover .post-art img {
+  transform: scale(1.06);
+}
+
+.post-art-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-family: monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: rgba(22, 19, 17, 0.78);
+  color: var(--color-gold-bright);
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(6px);
+}
+
+.post-art-category {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(22, 19, 17, 0.78);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(6px);
+}
+
+.post-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-card-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.post-excerpt {
+  font-size: 0.92rem;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.card-read-action {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.post-card:hover .card-read-action {
+  color: var(--color-gold);
+}
+
+/* Empty State / Notice Card */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-card-subtle);
+  border: 1px dashed var(--border-gold);
+  border-radius: var(--radius-md);
+  margin: 30px 0;
+}
+
+.empty-state h4 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  color: var(--color-ink-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Placeholder card for Renewal or Articles */
+.placeholder-card {
+  border: 1px dashed var(--color-gold-border);
+  background: var(--bg-card-subtle);
+  padding: 36px 28px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.placeholder-badge {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: var(--color-gold-soft);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.placeholder-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 10px;
+}
+
+.placeholder-card p {
+  font-size: 0.92rem;
+  color: var(--color-ink-muted);
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   QUOTE BAND / LITERARY RESPITE
+   ========================================================================== */
+.quote-band {
+  position: relative;
+  background: var(--color-olive-dark);
+  color: #fbf8f1;
+  padding: 90px clamp(24px, 5vw, 64px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.quote-band::before {
+  content: "“";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-serif);
+  font-size: 16rem;
+  color: rgba(255, 255, 255, 0.04);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.quote-band blockquote {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+  line-height: 1.4;
+  font-style: italic;
+  max-width: 820px;
+  margin: 0 auto 24px;
+}
+
+.quote-band cite {
+  font-size: 0.92rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-bright);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   ABOUT THE AUTHOR (HOMEPAGE SECTION & STANDALONE PAGE)
+   ========================================================================== */
+.about-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-photo-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-gold);
+}
+
+.about-photo-frame img {
+  width: 100%;
+  height: clamp(400px, 55vh, 600px);
+  object-fit: cover;
+}
+
+.about-photo-caption {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-script);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  border: 1px solid var(--border-gold);
+}
+
+.about-copy h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--color-ink-headings);
+  margin-bottom: 24px;
+}
+
+.about-copy h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.about-copy p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--color-ink-muted);
+  margin-bottom: 20px;
+}
+
+.about-copy p:first-of-type {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  color: var(--color-ink-headings);
+}
+
+/* ==========================================================================
+   CONTACT SECTION & FORM
+   ========================================================================== */
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: var(--bg-card-subtle);
+  border-top: 1px solid var(--border-delicate);
+}
+
+.contact-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-inner h2 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 16px;
+}
+
+.contact-inner h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.contact-inner p {
+  font-size: 1.1rem;
+  color: var(--color-ink-muted);
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 5vw, 44px);
+  text-align: left;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-headings);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px var(--color-gold-soft);
+  background: var(--bg-card);
+}
+
+.form-helper {
+  font-size: 0.78rem;
+  color: var(--color-ink-subtle);
+  margin-top: 6px;
+}
+
+.form-status-msg {
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  margin-top: 20px;
+  font-size: 0.92rem;
+  display: none;
+}
+
+.form-status-msg.status-success {
+  display: block;
+  background: rgba(61, 74, 54, 0.12);
+  color: var(--color-olive-dark);
+  border: 1px solid var(--color-olive);
+}
+
+.form-status-msg.status-error {
+  display: block;
+  background: rgba(222, 126, 67, 0.12);
+  color: var(--color-amber);
+  border: 1px solid var(--color-amber);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: var(--bg-page);
+  border-top: 1px solid var(--border-delicate);
+  padding: 60px clamp(24px, 5vw, 64px) 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 28px;
+  margin: 10px 0;
+}
+
+.footer-nav a {
+  font-size: 0.88rem;
+  color: var(--color-ink-muted);
+}
+
+.footer-nav a:hover {
+  color: var(--color-gold);
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: var(--color-ink-subtle);
+  border-top: 1px solid var(--border-delicate);
+  padding-top: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ==========================================================================
+   DEDICATED READING VIEW & MODAL READER
+   ========================================================================== */
+.reader-modal {
+  width: min(920px, 94vw);
+  max-height: 90vh;
+  margin: auto;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  color: var(--color-ink);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  padding: 0;
+  overflow: hidden;
+}
+
+.reader-modal::backdrop {
+  background: rgba(18, 15, 13, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.reader-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-delicate);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  z-index: 10;
+}
+
+.reader-brand {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.reader-close-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: var(--transition-smooth);
+}
+
+.reader-close-btn:hover {
+  background: var(--color-gold-soft);
+  color: var(--color-gold);
+  transform: rotate(90deg);
+}
+
+.reader-body {
+  padding: 40px clamp(24px, 6vw, 64px) 60px;
+  overflow-y: auto;
+  max-height: calc(90vh - 65px);
+}
+
+.reader-hero-visual {
+  width: 100%;
+  height: 280px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.reader-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reader-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--color-ink-headings);
+  margin-bottom: 12px;
+}
+
+.reader-lead {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-delicate);
+}
+
+/* POEM TEXT — Exact Stanza Preservation */
+.poem-container {
+  margin: 36px 0;
+  font-family: var(--font-editorial);
+  font-size: 1.42rem;
+  line-height: 1.85;
+  color: var(--color-ink-headings);
+}
+
+.poem-stanza {
+  margin-bottom: 2.2rem;
+  white-space: pre-line;
+}
+
+/* BEHIND THE LINES (AUTHOR INTERPRETATION) */
+.behind-the-lines {
+  margin-top: 54px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 36px clamp(20px, 4vw, 40px);
+  position: relative;
+}
+
+.behind-kicker {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.behind-kicker::before {
+  content: "✦";
+  color: var(--color-gold);
+}
+
+.behind-the-lines h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 18px;
+}
+
+.behind-copy p {
+  font-size: 1.04rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  margin-bottom: 16px;
+}
+
+.reflection-prompt-box {
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+}
+
+.reflection-prompt-box b {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+
+.reflection-prompt-box p {
+  font-family: var(--font-editorial);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-ink-headings);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.reader-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-delicate);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.reader-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   STANDALONE READING PAGES (writings/the-last-dream.html etc.)
+   ========================================================================== */
+.standalone-reading-page {
+  padding: 50px 0 100px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--color-ink-subtle);
+  margin-bottom: 30px;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-gold);
+}
+
+.standalone-hero-visual {
+  width: 100%;
+  height: clamp(300px, 45vh, 460px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 40px;
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.standalone-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    height: 520px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .values-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-quote {
+    grid-column: span 2;
+    text-align: center;
+    border-left: none;
+    border-top: 1px solid var(--border-delicate);
+    padding-top: 18px;
+    padding-left: 0;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-delicate);
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-smooth);
+    z-index: 99;
+  }
+
+  .site-nav.nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-visual {
+    min-height: 280px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    height: 440px;
+  }
+
+  .note-top, .note-bottom {
+    display: none;
+  }
+
+  .values-strip {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .values-quote {
+    grid-column: span 1;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Fallbacks for missing or unextracted assets */
+.category-photo-wrap {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.25) 0%, rgba(61, 74, 54, 0.5) 100%), #2c3627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-photo-wrap::before {
+  content: "❧";
+  font-size: 3rem;
+  color: var(--color-gold-bright);
+  opacity: 0.6;
+  position: absolute;
+}
+
+.post-art {
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.22) 0%, rgba(61, 74, 54, 0.4) 100%), #2c3627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-art::before {
+  content: "✦";
+  font-size: 2.5rem;
+  color: var(--color-gold-bright);
+  opacity: 0.5;
+  position: absolute;
+}
+
+.featured-visual {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.28) 0%, rgba(42, 51, 37, 0.7) 100%), #2a3325;
+}
+
+.character-stage {
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.28) 0%, rgba(61, 74, 54, 0.2) 60%, rgba(22, 19, 17, 0.95) 100%), #1c1815;
+}
+
+.about-photo-frame {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.2) 0%, rgba(61, 74, 54, 0.3) 100%), #2c3627;
+}
+
+img {
+  transition: opacity 0.3s ease;
+}
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('nijaaswini-theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        const btn = document.getElementById('themeToggle');
+        if (btn) btn.textContent = '☼';
+      }
+      const themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const isDark = document.body.classList.toggle('dark-mode');
+          themeToggle.textContent = isDark ? '☼' : '☾';
+          localStorage.setItem('nijaaswini-theme', isDark ? 'dark' : 'light');
+        });
+      }
+      const menuToggle = document.getElementById('menuToggle');
+      const siteNav = document.getElementById('siteNav');
+      if (menuToggle && siteNav) {
+        menuToggle.addEventListener('click', () => {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+          siteNav.classList.toggle('nav-open', !isExpanded);
+        });
+      }
+      const shareBtn = document.getElementById('sharePiece');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', async () => {
+          const shareData = {
+            title: 'Until We Say Hello Again — Nijaaswini',
+            text: 'So here’s to the friend who was once Unknown.',
+            url: window.location.href
+          };
+          try {
+            if (navigator.share) {
+              await navigator.share(shareData);
+            } else if (navigator.clipboard) {
+              await navigator.clipboard.writeText(window.location.href);
+              const orig = shareBtn.textContent;
+              shareBtn.textContent = 'Link copied to clipboard ✓';
+              setTimeout(() => { shareBtn.textContent = orig; }, 2400);
+            } else {
+              window.prompt('Copy direct link:', window.location.href);
+            }
+          } catch(e) {}
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#reading-content">Skip to literary content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="../index.html" aria-label="NIJAASWINI Homepage">
+      <span class="brand-leaf">❧</span>
+      <div class="wordmark-text">
+        <span class="wordmark-name">NIJAASWINI</span>
+        <span class="wordmark-tag">Poetry · Reflections · Articles</span>
+      </div>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Writings</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle warm dark/light theme">☾</button>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open mobile navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="reading-content" class="standalone-reading-page">
+    <div class="reading-wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="index.html">Writings</a>
+        <span>/</span>
+        <span>Poetry</span>
+      </nav>
+
+      <div class="standalone-hero-visual">
+        <img src="../assets/images/until-we-say-hello-again.jpg" alt="Two distant figures gazing across a peaceful sunset shoreline" onerror="this.style.opacity='0';">
+      </div>
+
+      <p class="post-meta">
+        <span>06</span>
+        <span>·</span>
+        <span>POETRY</span>
+        <span>·</span>
+        <span>A NOTE FROM THE AUTHOR</span>
+        <span>·</span>
+        <span>1 min read</span>
+      </p>
+
+      <h1 class="reader-title">Until We Say Hello Again</h1>
+      <p class="reader-lead">So here’s to the friend who was once Unknown.</p>
+
+      <div class='poem-container'><div class='poem-stanza'>The real goodbye happen slowly over time
+There is no see you again , u let the distance grow,
+Until we’re strangers, like we were long ago.</div><div class='poem-stanza'>So here’s to the friend who was once Unknown</div><div class='poem-stanza'>Dont be a Ghosting Stranger
+Tell me about your new friends u make
+Call me when u just need some one to talk to
+just say hello end with bye .
+Untill we say hello again !</div></div>
+
+            <section class="behind-the-lines" aria-label="Author Interpretation">
+        <p class="behind-kicker">Behind the Lines</p>
+        <h3>Quiet Drifts and Open Doors</h3>
+        <div class="behind-copy"><p>Friendships do not always end with arguments or dramatic departures. Often they fade quietly as time passes, distance grows, and two people slowly become strangers again.</p>
+<p>“Don’t be a Ghosting Stranger” is an honest, vulnerable appeal for simple human presence: an invitation to share updates, stay in touch, or even exchange a passing greeting without the finality of disappearing.</p>
+<p>The ending leaves room for hope without demanding that things return to how they were. It leaves the door open with warmth, holding onto space for another hello.</p>
+</div>        <div class="reflection-prompt-box">
+          <b>A Thought for the Reader</b>
+          <p>“How do you navigate the quiet drifting of friendships while leaving the door open?”</p>
+        </div></section>
+
+      <div class="reader-actions" style="margin-top: 60px;">
+        <div class="reader-nav-links">
+          <a class='text-link' href='the-life-that-remained-sealed.html'>← The Life That Remained Sealed</a>
+          <a class='text-link' href='the-voices-we-slowly-forget.html'>The Voices We Slowly Forget →</a>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: center;">
+          <a class="button button-secondary" href="index.html">Back to Collection</a>
+          <button class="button button-primary" id="sharePiece">Share Writing ↗</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="../index.html" aria-label="NIJAASWINI">
+      <span class="brand-leaf">❧</span>
+      <div class="wordmark-text">
+        <span class="wordmark-name">NIJAASWINI</span>
+        <span class="wordmark-tag">Thoughts that stay...</span>
+      </div>
+    </a>
+
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Writings</a>
+      <a href="../about/index.html">About</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+
+    <div class="footer-copyright">
+      <p>© 2026 Nijaswini Nandru. All writings, poems, and reflections belong to the author.</p>
+    </div>
+  </footer>
+</body>
+</html>

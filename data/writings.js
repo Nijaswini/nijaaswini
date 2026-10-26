@@ -1,0 +1,478 @@
+/**
+ * NIJAASWINI — Master Writings Collection
+ * Author: Nijaswini Nandru
+ * 
+ * Non-negotiable rule: Original writings are preserved verbatim with exact titles,
+ * spelling, punctuation, capitalization, line breaks, and stanza formatting.
+ */
+
+window.WRITINGS = [
+  {
+    id: "the-last-dream",
+    title: "The Last Dream",
+    category: "Poetry",
+    date: "",
+    order: 1,
+    readTime: "1 min read",
+    excerpt: "A child's dreams of light and life are swallowed by the sounds of war.",
+    image: "the-last-dream.jpg",
+    imageAlt: "A child looking toward a distant sunset sky over a war-torn landscape",
+    body: `Toddler's eyes bloomed with a shade of red 
+a path to death.  
+Dreamed for the shine of light 
+But it was life of fight 
+Sky sparked all at once 
+Soon Storm of rockets greet the ones 
+An eager ear wished to hear the melodious song 
+Alas, I heard the scream of war. 
+I wished it was all a dream
+But fetch the last dream.`,
+    interpretation: {
+      type: "author-context",
+      title: "Mourning Stolen Innocence",
+      kicker: "Behind the Lines",
+      text: [
+        "The poem mourns the childhood that war steals from innocent children. A toddler’s world should be filled with colour, birdsong, family laughter, and dreams of the future.",
+        "Instead, bloodshed paints their world red, rockets turn the sky into a threat, and the sounds of ordinary life are replaced by gunfire and desperate cries.",
+        "The children hope that the horrors are only a nightmare and that morning will restore their world. But the poem’s final tragedy is that they may never wake. Their hope remains, even as war takes away their lives and the tomorrows they deserved."
+      ],
+      reflectionPrompt: "How do we preserve our collective humanity when the most innocent are subjected to conflict?"
+    }
+  },
+  {
+    id: "stranger-in-the-mirror",
+    title: "Stranger in the Mirror",
+    category: "Poetry",
+    date: "",
+    order: 2,
+    readTime: "2 min read",
+    excerpt: "I stare into the mirror, but who stares back?",
+    image: "stranger-in-the-mirror.jpg",
+    imageAlt: "A contemplative figure facing an antique mirror with soft shadows and reflective warm lighting",
+    body: `I stare into the mirror, but who stares back?
+
+The same dark brown eyes, yet never claimed mine,
+the face once mine , yet lost on time,
+a smile feels borrowed,
+a voice heard is hallow .
+
+In stillness began to search traces of “The child
+who built castles in the sky,
+now sifts through ruins, asking why?”
+
+Am I lost, or have I changed?
+Did I drift, or was I rearranged?
+The mirror stayed silent, just reflecting,
+a version of me that my heart deflecting.
+
+The gaze I trace whispers, time has shaped you
+into someone new,
+And I don’t know if that’s good or true.
+
+The mirror reflects a face I barely known ,
+But I’m still here, unsure of what’s been
+unknown.
+
+So I whisper softly, “Who are you?”
+
+The mirror sighs, “look closer....it’s you ! It’s
+always been you”!!`,
+    interpretation: {
+      type: "author-context",
+      title: "The Search for Self Across Time",
+      kicker: "Behind the Lines",
+      text: [
+        "Sometimes life changes us so gradually that one day we no longer recognise the person we have become. The same face looks back, yet the smile feels borrowed and the voice has lost its certainty, shaped by expectations and the passage of days.",
+        "The speaker searches for traces of the child who once built castles in the sky, wondering whether they are lost or simply rearranged.",
+        "The mirror does not offer simple answers—it only reflects the present self. Yet in its closing whisper lies a quiet revelation: perhaps finding yourself is not about returning to who you once were, but learning to recognize who has always been there underneath."
+      ],
+      reflectionPrompt: "When you look back at past versions of yourself, what parts do you still recognize?"
+    }
+  },
+  {
+    id: "i-was-just-there",
+    title: "I Was Just There",
+    category: "Poetry",
+    date: "",
+    order: 3,
+    readTime: "1 min read",
+    excerpt: "No words—just echoes of waves, crashing into me, from ocean graves.",
+    image: "i-was-just-there.jpg",
+    imageAlt: "A solitary contemplative figure standing at the edge of an expansive, infinite ocean under a wild twilight sky",
+    body: `I was just there,
+Beneath the wild sky,
+dark clouds hanging high.
+
+No words—just echoes of waves,
+Crashing into me, from ocean graves.
+
+I didn’t sink—held onto hope ,
+To hear, to see, to somehow cope.
+
+An endless view wrapped all around;
+Still, I waited there, spellbound.
+
+And even when death came to greet me
+I was still waiting bare,
+To tell you what my hollow bones
+could never dare to speak into the air.`,
+    interpretation: {
+      type: "author-approved",
+      title: "An Untold Confession Suspended in Infinity",
+      kicker: "Behind the Lines · Author-Approved Meaning",
+      text: [
+        "Core author-approved meaning: This poem expresses an untold confession to someone the speaker loved. The speaker was present, emotionally invested, and close to this person, yet the most important words were never fully spoken into the air.",
+        "The ocean represents infinity: an endless space in which the speaker experiences no meaningful forward or backward movement. The speaker remains suspended in an emotional stillness, unable to progress toward a resolution or return to an earlier, unburdened moment.",
+        "The waiting continues even beyond death. Central to the poem's emotional depth is that the speaker's waiting is not resolved simply by the passage of time or the ending of mortal life. Only 'hollow bones' remain, still holding the unspoken confession that could never dare to be spoken aloud.",
+        "The enduring tragedy is not merely heartbreak, but the heavy permanence of a confession that never found its voice."
+      ],
+      reflectionPrompt: "What thoughts have you kept unspoken, and how long does an unexpressed truth linger?"
+    }
+  },
+  {
+    id: "the-waves-that-keep-me-bound",
+    title: "The Waves That Keep Me Bound",
+    category: "Poetry",
+    date: "July 2024",
+    order: 4,
+    readTime: "1 min read",
+    excerpt: "I long to leave my memories, to make a wave, to ride the tides and find my way.",
+    image: "the-waves-that-keep-me-bound.jpg",
+    imageAlt: "Recurring ocean waves washing gently over a quiet sandy shoreline during golden sunset",
+    body: `I long to leave my memories, to make a wave,
+To ride the tides and find my way,
+But waves, they do not let me go,
+They keep me bound, they keep me slow.
+I remain here in the shore
+Yearning to leave the dry tides to come back tight,
+
+But waves, they keep me bound, they keep me slow`,
+    interpretation: {
+      type: "author-approved",
+      title: "The Comfort and Pain of Returning Memories",
+      kicker: "Behind the Lines · Author-Approved Meaning",
+      text: [
+        "Core author-approved meaning: The waves represent recurring memories that continually return to shore. These memories hold a complex duality: they are not entirely painful; some are comforting, meaningful, and cherished. However, they also bring heartache and keep the speaker emotionally tied to the past.",
+        "The speaker longs to say goodbye to the past, make a new wave, and begin again. The poem holds two opposing feelings in delicate tension:",
+        "1. The desire to hold onto memories because they contain comfort, warmth, and meaning.",
+        "2. The pressing need to release their hold so the speaker can ride the tides and move forward.",
+        "Moving forward here does not mean forgetting everything. The author's meaning is more nuanced: the speaker seeks to acknowledge and honor the past while creating space for a new beginning."
+      ],
+      reflectionPrompt: "Which memories bring you both solace and stillness, and when does remembering prevent a new beginning?"
+    }
+  },
+  {
+    id: "the-life-that-remained-sealed",
+    title: "The Life That Remained Sealed",
+    category: "Poetry",
+    date: "December 2024",
+    order: 5,
+    readTime: "1 min read",
+    excerpt: "The book that was never read, the lines that were never spoken.",
+    image: "the-life-that-remained-sealed.jpg",
+    imageAlt: "An elegant closed antique journal bound in dark leather with gold botanical filigree on a warm wooden study desk",
+    body: `To the LIFE that remained sealed, sits
+quietly, yearning to be opened.
+
+The book that was never read,
+The lines that were never spoken,
+The pages that were never turned beyond the
+cover
+Waiting to reveal the rich story it holds.
+So why let it sit, gathering dust?
+Dive into its depths, as every story must.`,
+    interpretation: {
+      type: "author-context",
+      title: "Unopened Stories and Hidden Possibilities",
+      kicker: "Behind the Lines",
+      text: [
+        "The sealed book represents a life filled with unexpressed feelings, unwritten chapters, and unexplored possibilities. Beneath a quiet surface lies a rich, unread narrative waiting for the courage to turn the first page.",
+        "The poem asks why we let potential gather dust when every life deserves to have its full story spoken and lived."
+      ],
+      reflectionPrompt: "What unread chapter of your own life is waiting for you to turn the page?"
+    }
+  },
+  {
+    id: "until-we-say-hello-again",
+    title: "Until We Say Hello Again",
+    category: "Poetry",
+    date: "",
+    order: 6,
+    readTime: "1 min read",
+    excerpt: "So here’s to the friend who was once Unknown.",
+    image: "until-we-say-hello-again.jpg",
+    imageAlt: "Two distant figures sitting together overlooking a twilight city horizon with glowing string lights",
+    body: `The real goodbye happen slowly over time
+There is no see you again , u let the distance grow,
+Until we’re strangers, like we were long ago.
+
+So here’s to the friend who was once Unknown
+
+Dont be a Ghosting Stranger
+Tell me about your new friends u make
+Call me when u just need some one to talk to
+just say hello end with bye .
+Untill we say hello again !`,
+    interpretation: {
+      type: "author-context",
+      title: "Quiet Drifts and Open Doors",
+      kicker: "Behind the Lines",
+      text: [
+        "Friendships do not always end with arguments or dramatic departures. Often they fade quietly as time passes, distance grows, and two people slowly become strangers again.",
+        "“Don’t be a Ghosting Stranger” is an honest, vulnerable appeal for simple human presence: an invitation to share updates, stay in touch, or even exchange a passing greeting without the finality of disappearing.",
+        "The ending leaves room for hope without demanding that things return to how they were. It leaves the door open with warmth, holding onto space for another hello."
+      ],
+      reflectionPrompt: "How do you navigate the quiet drifting of friendships while leaving the door open?"
+    }
+  },
+  {
+    id: "the-voices-we-slowly-forget",
+    title: "The Voices We Slowly Forget",
+    category: "Reflections",
+    date: "",
+    order: 7,
+    readTime: "1 min read",
+    excerpt: "Losing the people you love feels like losing a part of yourself.",
+    image: "the-voices-we-slowly-forget.jpg",
+    imageAlt: "An empty bench overlooking misty evening trees and twilight shadows",
+    body: `Losing the people you love feels like losing a part of yourself. You no longer hear the voice that once echoed in your life every single hour. They no longer call to talk to you. Their calls once filled your recent list, always just a tap away.
+
+Now, have to scroll through your contacts just to find their name And then, without warning, time begins to steal even the smallest traces. Heartbreakingly, you begin to realise that you no longer remember what they sounded like !!!!`,
+    interpretation: {
+      type: "reflection-note",
+      title: "The Quiet Cruelty of Time",
+      kicker: "Behind the Reflection",
+      text: [
+        "Losing someone is rarely a single event; it unfolds across quiet increments of time. The sudden absence of their calls is followed by the realization that their name has drifted down the contact list.",
+        "And then, time steals the sound of their voice. This piece touches on the tender pain of remembering the feeling of a person while grieving the loss of their tangible echoes."
+      ],
+      reflectionPrompt: "What subtle details of the people you miss do you hold closest?"
+    }
+  },
+  {
+    id: "reality",
+    title: "Reality",
+    category: "Reflections",
+    date: "September 2024",
+    order: 8,
+    readTime: "1 min read",
+    excerpt: "Teenager to adult transformation is the difficult phase of life because this is the period in which we fight with ourselves.",
+    image: "reality.jpg",
+    imageAlt: "A lone traveler looking out over vast layered horizons and gentle morning mist",
+    body: `Teenager to adult transformation is the difficult phase of life because this is the period in which we fight with ourselves.
+We start of by thinking we are pearl of the sea but slowly realize there are many more pearls which shine more,
+within this span of time we compare with others degrade our self worth and create a lot of insecurites. By the time we realize that every pearl as its own uniqueness we step into adulthood`,
+    interpretation: {
+      type: "reflection-note",
+      title: "Stepping into One’s Own Light",
+      kicker: "Behind the Reflection",
+      text: [
+        "The transition from youth to adulthood brings a quiet battle against comparison. In discovering the vastness of the world, we risk measuring our brilliance against others.",
+        "True maturity begins when we recognize that every pearl has its own intrinsic value, and someone else’s radiance does not diminish our own."
+      ],
+      reflectionPrompt: "How did you learn to stop comparing your light to that of others?"
+    }
+  },
+  {
+    id: "when-did-we-change",
+    title: "When Did We Change?",
+    category: "Reflections",
+    date: "August 2024",
+    order: 9,
+    readTime: "1 min read",
+    excerpt: "When did we change from laughing freely to hiding behind forced smiles?",
+    image: "when-did-we-change.jpg",
+    imageAlt: "A quiet room with evening moonlight casting soft window reflections",
+    body: `When did we change from crying out and sharing our every feeling to hesitating and hiding everything?
+
+When did we change from being selfless to holding expectations from others?
+
+When did we change from seeking guidance to confidently declaring, "I know what I'm doing"?
+
+When did we change from connecting deeply with others to building walls around our hearts?
+
+When did we change from laughing freely to hiding behind forced smiles?
+
+When did we change from trusting easily to questioning every intention?
+
+When did we change from making memories to just taking pictures?`,
+    interpretation: {
+      type: "reflection-note",
+      title: "Remembering Childhood Openness",
+      kicker: "Behind the Reflection",
+      text: [
+        "Seven questions that trace the quiet erosion of childhood vulnerability. In learning to protect ourselves as adults, we inadvertently build walls around the very openness that once made life rich.",
+        "The reflection invites us to question whether growing up must always mean growing guarded."
+      ],
+      reflectionPrompt: "Which of these questions resonated deepest with your own journey?"
+    }
+  },
+  {
+    id: "they-were-supposed-to-come-back",
+    title: "THEY WERE SUPPOSED TO COME BACK",
+    subtitle: "Somewhere beyond the flooded riverbanks, a search continued, a family waited, and a trail of unanswered questions grew longer. In the chaos that followed, what had become of those who never returned?",
+    category: "Articles",
+    date: "October 2026",
+    order: 10,
+    readTime: "6 min read",
+    excerpt: "Somewhere beyond the flooded riverbanks, a search continued, a family waited, and a trail of unanswered questions grew longer.",
+    image: "they-were-supposed-to-come-back.jpg",
+    imageAlt: "A lone glowing lantern on misty riverbanks beside swollen mountain waters at twilight",
+    body: `At 9:14 in the morning on the 26th of August 2026, Bima Gole heard a voice she would never be able to forget.
+
+It was a casual call with her elder sister, Uma, over the phone when someone in the background shouted:
+“Run, run, we have to run.”
+
+Then, the call disconnected.
+
+Bima called back. No answer.
+
+She tried again, expecting Uma to pick up and explain what had happened. Maybe the network had failed. Maybe her sister had dropped the phone while trying to get somewhere safe. Plenty of explanations were possible, and Bima had no reason to believe the worst just yet.
+
+But the phone remained silent.
+
+And just like that, an ordinary morning took an unexpected turn.
+
+On 26th of August, heavy flash flooding impacted communities along Nepal’s Bhotekoshi and Trishuli river systems. Settlements were flooded with water, mud, and debris; infrastructure was damaged, and people went missing. All of a sudden, families were looking for their loved ones who were supposed to be coming home from work or traveling.
+
+Uma and her children were among those reported missing.
+
+Bima began visiting hospitals, police offices, and other places where someone might have information. She carried her sister's photograph. She asked questions. She kept looking.
+
+What else could she do?
+
+She had heard Uma's voice only moments before the call ended. She had no explanation for the silence, no confirmed account of what happened next. All she remembers are those few seconds.
+
+Nine fourteen in the morning.ie;9:14
+
+It's strange how a normal moment can become something else after something terrible happens. What you would normally forget becomes a conversation you replay in your mind again and again. And then you start to wonder if there was a clue you didn't see, if there was something you should have caught, or something you could have handled differently.
+
+Bima could remember what she had heard. What she could not know was what happened after the call ended.
+
+And so she searched.
+
+With each passing day, the true horror of the catastrophe unfolded, as rescue crews battled collapsed roads, crumbling structures, and dangerous conditions. For many families waiting, survival meant a tireless, simple routine: keep calling, keep asking, keep looking.
+
+A phone might be switched off. A person might be trapped somewhere. They might be safe in a shelter, unable to call home. There was always another possibility to consider.
+
+That uncertainty was exhausting. But it also left room for hope.
+
+Then came news of two men trapped underground at the Trishuli 3A hydropower project.
+
+Sanjay Sah, a mechanical foreman, and Kabir Maharjan, a mechanical supervisor, had been caught inside the facility when floodwaters overwhelmed the area. According to reports, Sah had tried to help colleagues escape as the water entered the underground section. Maharjan had been at the site for maintenance work. Both men became trapped.
+
+Their families had no reliable way of knowing what was happening to them.
+
+Maharjan had spoken to his wife that morning. He had told her that he and his colleagues were going to have breakfast before heading underground, warning her that his mobile phone might not work there.
+
+An ordinary conversation. An ordinary warning.
+
+Then the flood came.
+
+For nine days, the men were shut off from the world. Rescuers were trying to reach damaged underground structures, crawling through mud and rubble. Conditions were dangerous; there were difficulties at every turn.
+
+The rescuers heard voices from inside the tunnel.
+
+There were people living there.
+
+On September 4, Sah and Maharjan were brought out alive and taken for medical treatment in Kathmandu.
+
+Nine days underground, and they had survived.
+
+For their families, the uncertainty finally had an answer. For other families still searching, the rescue offered something powerful: a reason not to give up.
+
+If these men could survive for nine days in darkness, perhaps someone else was still alive somewhere. Perhaps another trapped person was waiting to be found. Perhaps the next announcement would bring another family the news it had been hoping for.
+
+But hope, however necessary, was not proof.
+
+The rescue could not tell Bima where Uma was. It could not tell her whether her sister and the children were safe. One family's extraordinary reunion could offer hope to thousands without resolving the question that mattered most to any single one of them.
+
+Where was their person?
+
+As the search continued, families checked hospitals and lists, showing photographs to everyone they met. They were looking for more than a name. They were looking for something that could explain what had happened.
+
+Just like that, the search itself changed.
+
+At first, families hoped their loved ones would walk back through the door. Later, some began looking for signs that could help identify those who had been recovered.
+
+In Syaphrubesi, Raj Kumar Diyali disappeared with his wife, Shriti, and their four-year-old son, Siraj. Their relatives searched for them along the river. Then a human hand was found downstream, and the family feared it might belong to Raj Kumar. Forensic samples were provided for identification.
+
+It is difficult to imagine the moment when a family begins waiting for identification instead of a reunion.
+
+The question changes, little by little. First, Where are they? Then, Are they alive? And finally, What actually happened?
+
+Eventually, even a painful certainty became softer than the sharp edges of doubt.
+
+On October 5, Nepal ended its active search-and-rescue operation and shifted its focus toward rehabilitation and reconstruction. Reports put the number of recovered bodies at at least 1,455, while 5,285 people remained missing. Thousands of homes and essential facilities had also been affected.
+
+The figures were necessary. They showed the scale of the disaster and the enormous work still facing the country.
+
+But a national statistic can’t feel the ache of waiting for just one person.
+
+It cannot tell us how many times someone checked a telephone, how many hospitals a family visited, or how carefully a photograph was examined in the hope of recognizing a familiar face.
+
+For one family, the end of the rescue operation might have marked the beginning of accepting a loss. For another, it may have been a relief that a loved one had been found. The announcement didn’t settle the fate of other families still waiting.
+
+An operation can be stopped because the situation requires a change of priorities. Grief doesn't work on the same clock.
+
+Roads can be repaired. Houses can be rebuilt. People can get back to work and get their lives back in order again. But when someone is missing, the normal parts of life can seem strangely incomplete.
+
+A telephone number stays saved. A photograph remains in a drawer. The memory of a last conversation often burns in a family's mind more than the entire aftermath of the disaster.
+
+These personal details seem minor next to swallowed communities and decimated infrastructure. But they do show what the disaster has really changed.
+
+A missing person is not just another name on a list. They are someone's sister, parent, partner, or child. They have routines, responsibilities, and relationships that still matter to those waiting for them.
+
+It is a story of the human need for an answer when an ordinary day ends in extraordinary uncertainty.
+
+The available reporting doesn't tell us what happened to Uma and her children. Without proof, their story can’t honestly be turned into either a reunion or a confirmed goodbye.
+
+And that’s a tough ending to walk away from—unresolved.
+
+Bima can’t rewind to 9:14 that morning and resume the conversation. She can’t ask Uma what happened after the call got cut off. Silence alone can’t tell her if her sister was frightened, hurt, trapped, or beyond help.
+
+She can only seek trustworthy information and hold on to the memory of the last time she heard her sister’s voice.
+
+Across Nepal, other families have lived their own versions of this silence. Their situations are different, but the question behind them is painfully familiar:What happened to the person who was supposed to come home?
+
+Eventually, roads are repaired, homes are rebuilt, and the story fades from the evening news. But the families of the missing are left behind. They cannot move on. Their disaster doesn't end when the water clears; it persists in the silence of an unanswered phone, the ache of a photograph, and the endless search through official lists. They are left living in the painful gap between memory and closure.
+
+Bima's story began with a conversation that ended too soon. This tragedy is measured in lives lost, people rescued, and thousands still unaccounted for.
+
+Yet its deepest question remains personal:
+
+Where were Uma and her children?
+
+No official records fill the silence, and no ending can responsibly be written in their place. All that lingers is the memory of that last morning—a sister’s voice on the line, a sudden wave of fear in the background, and a call that suddenly stopped. They never planned for a final farewell. They simply expected ordinary life to continue: another call, another visit, another regular day together.
+
+They were supposed to come back.
+
+And for the families still waiting for answers, the hardest part is not knowing whether the waiting will ever end.`,
+    interpretation: {
+      type: "article-note",
+      title: "The Human Ache of the Unresolved",
+      kicker: "Behind the Article",
+      text: [
+        "Natural disasters are routinely quantified by casualty numbers, economic estimates, and infrastructure damage. But statistics cannot capture the interior reality of those who wait for a phone to ring.",
+        "This long-form piece chronicles the catastrophic August 2026 flash floods along Nepal’s Bhotekoshi and Trishuli river systems through the personal lens of waiting. It explores the harrowing liminal space between hope and loss—the gap where families live when loved ones neither return nor are confirmed gone.",
+        "A missing person is never merely a statistic. They represent an unfinished sentence, an unanswered morning call, and a lifetime of presence abruptly replaced by silence."
+      ],
+      reflectionPrompt: "How do we hold space for the families of the missing when the world moves on to rebuilding?"
+    }
+  }
+];
+window.PLACEHOLDERS = {
+  renewal: {
+    id: "renewal",
+    title: "Renewal",
+    category: "Reflections",
+    status: "Awaiting Author Manuscript",
+    note: "This identified reflection piece by Nijaswini Nandru is currently in preparation. The authentic original text will be published here upon release by the author."
+  },
+  articles: {
+    title: "Articles by Nijaswini Nandru",
+    category: "Articles",
+    status: "Editorial Preparation",
+    note: "The author's long-form articles, literary essays, and thoughtful examinations of life and art are currently being curated for publication. Check back soon or leave a note via the Contact page."
+  }
+};

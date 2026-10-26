@@ -1,0 +1,3978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3d4a36">
+  <meta name="description" content="NIJAASWINI — The private literary world of Nijaswini Nandru. Discover poems, explore reflections, read articles, and understand the emotions behind the words.">
+  <title>NIJAASWINI — Thoughts that stay...</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+  <style>
+/* ==========================================================================
+   NIJAASWINI — MASTER LITERARY DESIGN SYSTEM
+   Author: Nijaswini Nandru
+   "Thoughts that stay..."
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root {
+  /* Warm Literary Palette (Default Light) */
+  --bg-page: #fbf8f1;
+  --bg-page-tint: #f5efe3;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f7f2e7;
+  --bg-surface: #ede5d5;
+  --bg-glass: rgba(251, 248, 241, 0.88);
+  --bg-glass-card: rgba(255, 255, 255, 0.85);
+
+  --color-ink: #221d19;
+  --color-ink-headings: #191410;
+  --color-ink-muted: #5a5148;
+  --color-ink-subtle: #7c7268;
+
+  --color-olive: #3d4a36;
+  --color-olive-dark: #2a3325;
+  --color-olive-light: #526349;
+  --color-olive-soft: rgba(61, 74, 54, 0.08);
+
+  --color-earth: #6b5745;
+  --color-earth-soft: rgba(107, 87, 69, 0.1);
+
+  --color-gold: #c49a45;
+  --color-gold-bright: #dfb55c;
+  --color-gold-soft: rgba(196, 154, 69, 0.16);
+  --color-gold-border: rgba(196, 154, 69, 0.38);
+
+  --color-amber: #de7e43;
+  --color-amber-soft: rgba(222, 126, 67, 0.12);
+
+  --border-delicate: rgba(90, 81, 72, 0.14);
+  --border-gold: rgba(196, 154, 69, 0.32);
+
+  --shadow-sm: 0 2px 8px rgba(34, 29, 25, 0.04);
+  --shadow-md: 0 8px 24px rgba(34, 29, 25, 0.07);
+  --shadow-lg: 0 16px 40px rgba(34, 29, 25, 0.1);
+  --shadow-gold: 0 8px 28px rgba(196, 154, 69, 0.15);
+
+  /* Fonts */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-reading-width: 760px;
+  --header-height: 74px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-smooth: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Warm Dark Theme (Espresso, Amber & Gold) */
+body.dark-mode {
+  --bg-page: #151311;
+  --bg-page-tint: #1c1815;
+  --bg-card: #201b17;
+  --bg-card-subtle: #27221d;
+  --bg-surface: #2d2722;
+  --bg-glass: rgba(21, 19, 17, 0.92);
+  --bg-glass-card: rgba(32, 27, 23, 0.9);
+
+  --color-ink: #f0e9dc;
+  --color-ink-headings: #fcf8f0;
+  --color-ink-muted: #b8ab9a;
+  --color-ink-subtle: #948674;
+
+  --color-olive: #687e5b;
+  --color-olive-dark: #819b71;
+  --color-olive-light: #9ab48b;
+  --color-olive-soft: rgba(104, 126, 91, 0.18);
+
+  --color-earth: #b29b86;
+  --color-earth-soft: rgba(178, 155, 134, 0.15);
+
+  --color-gold: #dfb55c;
+  --color-gold-bright: #ebd082;
+  --color-gold-soft: rgba(223, 181, 92, 0.2);
+  --color-gold-border: rgba(223, 181, 92, 0.45);
+
+  --color-amber: #e8915b;
+  --color-amber-soft: rgba(232, 145, 91, 0.18);
+
+  --border-delicate: rgba(240, 233, 220, 0.1);
+  --border-gold: rgba(223, 181, 92, 0.35);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 8px 28px rgba(223, 181, 92, 0.2);
+}
+
+/* Base Reset & Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+/* Skip link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--color-olive);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  font-weight: 500;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Layout Wrappers */
+.section-wrap {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.reading-wrap {
+  max-width: var(--max-reading-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Section Headings */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-delicate);
+  padding-bottom: 20px;
+}
+
+.eyebrow {
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: "❧";
+  font-size: 0.95rem;
+  color: var(--color-olive);
+}
+
+.section-heading h2 {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-ink-headings);
+  line-height: 1.2;
+}
+
+.section-heading h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.heading-note {
+  font-size: 0.92rem;
+  color: var(--color-ink-subtle);
+  font-style: italic;
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+}
+
+/* ==========================================================================
+   SITE HEADER & NAVIGATION
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-delicate);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(16px, 4vw, 48px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-ink-headings);
+}
+
+.wordmark .brand-leaf {
+  font-size: 1.45rem;
+  color: var(--color-olive);
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.wordmark:hover .brand-leaf {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordmark-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-ink-headings);
+}
+
+.wordmark-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.site-nav a {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  position: relative;
+  padding: 6px 0;
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.25s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-ink-headings);
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  width: 100%;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  transition: var(--transition-smooth);
+}
+
+.search-box:focus-within {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px var(--color-gold-soft);
+  background: var(--bg-card);
+}
+
+.search-box span {
+  font-size: 0.95rem;
+  color: var(--color-gold);
+}
+
+.search-box input {
+  font-size: 0.86rem;
+  width: 140px;
+  transition: width 0.25s ease;
+}
+
+.search-box input:focus {
+  width: 190px;
+  outline: none;
+}
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.theme-toggle:hover {
+  background: var(--color-gold-soft);
+  border-color: var(--color-gold);
+  transform: rotate(20deg);
+}
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   BUTTONS & ACCENTS
+   ========================================================================== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 28px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.03em;
+}
+
+.button-primary {
+  background-color: var(--color-olive);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(61, 74, 54, 0.28);
+}
+
+.button-primary:hover {
+  background-color: var(--color-olive-dark);
+  box-shadow: 0 6px 20px rgba(61, 74, 54, 0.4);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--color-ink-headings);
+  border: 1px solid var(--border-gold);
+}
+
+.button-secondary:hover {
+  background: var(--color-gold-soft);
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.button-light {
+  background: #ffffff;
+  color: var(--color-ink-headings);
+  box-shadow: var(--shadow-md);
+}
+
+.button-light:hover {
+  background: var(--bg-page-tint);
+  transform: translateY(-2px);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  cursor: pointer;
+}
+
+.text-link:hover {
+  color: var(--color-gold);
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   HERO SECTION & CINEMATIC CHARACTER STAGE
+   ========================================================================== */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  padding: 40px clamp(24px, 5vw, 64px);
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-copy {
+  z-index: 10;
+  max-width: 620px;
+}
+
+.hero-tagline {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--color-gold);
+  line-height: 1.1;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  color: var(--color-ink-headings);
+  letter-spacing: -0.015em;
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+  display: inline-block;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  margin-bottom: 36px;
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-delicate);
+}
+
+.hero-stats span {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats b {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-olive);
+  line-height: 1;
+}
+
+.hero-stats small {
+  font-size: 0.78rem;
+  color: var(--color-ink-subtle);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Character Stage & Canvas Scrubbing Engine */
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: clamp(520px, 75vh, 760px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.character-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.18) 0%, rgba(61, 74, 54, 0.1) 60%, transparent 85%);
+  box-shadow: inset 0 0 0 1px var(--border-gold);
+  cursor: ew-resize;
+}
+
+.character-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Atmospheric decorative rings behind character */
+.stage-halo {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 1px dashed var(--color-gold-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: slowSpin 120s linear infinite;
+}
+
+.stage-halo-inner {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+@keyframes slowSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Floating literary note pills */
+.floating-note {
+  position: absolute;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-gold);
+  font-family: var(--font-script);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0.4s ease;
+}
+
+.note-top {
+  top: 40px;
+  right: 20px;
+  transform: rotate(2.5deg);
+}
+
+.note-bottom {
+  bottom: 85px;
+  left: 20px;
+  font-size: 1.15rem;
+  transform: rotate(-2deg);
+}
+
+/* Scrubber Telemetry & Controls Pill */
+.scrub-telemetry-pill {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(22, 19, 17, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f0e9dc;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(223, 181, 92, 0.4);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 15;
+  pointer-events: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 95%;
+}
+
+.telemetry-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-gold-bright);
+  font-weight: 600;
+}
+
+.telemetry-indicator .pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-gold-bright);
+  box-shadow: 0 0 8px var(--color-gold-bright);
+  animation: dotPulse 2s infinite ease-in-out;
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.telemetry-hint {
+  color: #c4b9a8;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+.telemetry-frame-num {
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   VALUES & ETHOS STRIP
+   ========================================================================== */
+.values-strip {
+  background: var(--bg-card-subtle);
+  border-top: 1px solid var(--border-delicate);
+  border-bottom: 1px solid var(--border-delicate);
+  padding: 28px clamp(24px, 5vw, 64px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.2fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.values-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.value-icon {
+  font-size: 1.4rem;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.value-text b {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-ink-headings);
+  font-weight: 600;
+}
+
+.value-text small {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-ink-subtle);
+  margin-top: 2px;
+}
+
+.values-quote {
+  font-family: var(--font-script);
+  font-size: 1.45rem;
+  color: var(--color-olive);
+  text-align: right;
+  line-height: 1.25;
+  border-left: 1px solid var(--border-delicate);
+  padding-left: 24px;
+}
+
+/* ==========================================================================
+   DOORWAYS / CATEGORY CARDS
+   ========================================================================== */
+.category-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.category-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold-border);
+}
+
+.category-photo-wrap {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+}
+
+.category-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.category-card:hover .category-photo {
+  transform: scale(1.06);
+}
+
+.category-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category-order {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.category-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 8px;
+}
+
+.category-info p {
+  font-size: 0.88rem;
+  color: var(--color-ink-muted);
+  line-height: 1.55;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.category-action {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.category-card:hover .category-action {
+  color: var(--color-gold);
+}
+
+/* ==========================================================================
+   FEATURED POEM SECTION
+   ========================================================================== */
+.featured-section {
+  padding-bottom: 80px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.featured-visual {
+  position: relative;
+  min-height: 420px;
+  background-color: var(--bg-surface);
+  overflow: hidden;
+}
+
+.featured-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.featured-card:hover .featured-visual img {
+  transform: scale(1.04);
+}
+
+.featured-stamp {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(22, 19, 17, 0.82);
+  color: var(--color-gold-bright);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  border: 1px solid rgba(223, 181, 92, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.featured-visual-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  color: #ffffff;
+  font-family: var(--font-script);
+  font-size: 1.45rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.featured-content {
+  padding: clamp(32px, 5vw, 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-meta {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.featured-content h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--color-ink-headings);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.featured-excerpt {
+  font-family: var(--font-editorial);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--color-ink-muted);
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.featured-footnote {
+  margin-top: 20px;
+  font-size: 0.82rem;
+  color: var(--color-ink-subtle);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   WRITINGS COLLECTION & FILTERING
+   ========================================================================== */
+.writing-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.writing-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: inline-flex;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-full);
+  padding: 4px;
+  gap: 4px;
+}
+
+.filter {
+  padding: 8px 22px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter:hover {
+  color: var(--color-ink-headings);
+}
+
+.filter.active {
+  background: var(--color-olive);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(61, 74, 54, 0.25);
+}
+
+.writing-count-badge {
+  font-size: 0.85rem;
+  color: var(--color-ink-subtle);
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+}
+
+/* Post Cards Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.post-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold-border);
+}
+
+.post-card-btn {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.post-art {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-surface);
+  z-index: 0;
+}
+
+.post-art img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.post-card:hover .post-art img {
+  transform: scale(1.06);
+}
+
+.post-art-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  font-family: monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: rgba(22, 19, 17, 0.78);
+  color: var(--color-gold-bright);
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(6px);
+}
+
+.post-art-category {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(22, 19, 17, 0.78);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(6px);
+}
+
+.post-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-card-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.post-excerpt {
+  font-size: 0.92rem;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.card-read-action {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-olive);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.post-card:hover .card-read-action {
+  color: var(--color-gold);
+}
+
+/* Empty State / Notice Card */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-card-subtle);
+  border: 1px dashed var(--border-gold);
+  border-radius: var(--radius-md);
+  margin: 30px 0;
+}
+
+.empty-state h4 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  color: var(--color-ink-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Placeholder card for Renewal or Articles */
+.placeholder-card {
+  border: 1px dashed var(--color-gold-border);
+  background: var(--bg-card-subtle);
+  padding: 36px 28px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.placeholder-badge {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: var(--color-gold-soft);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.placeholder-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 10px;
+}
+
+.placeholder-card p {
+  font-size: 0.92rem;
+  color: var(--color-ink-muted);
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   QUOTE BAND / LITERARY RESPITE
+   ========================================================================== */
+.quote-band {
+  position: relative;
+  background: var(--color-olive-dark);
+  color: #fbf8f1;
+  padding: 90px clamp(24px, 5vw, 64px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.quote-band::before {
+  content: "“";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-serif);
+  font-size: 16rem;
+  color: rgba(255, 255, 255, 0.04);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.quote-band blockquote {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+  line-height: 1.4;
+  font-style: italic;
+  max-width: 820px;
+  margin: 0 auto 24px;
+}
+
+.quote-band cite {
+  font-size: 0.92rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-bright);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   ABOUT THE AUTHOR (HOMEPAGE SECTION & STANDALONE PAGE)
+   ========================================================================== */
+.about-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-grid,
+.about-card {
+  display: block;
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: clamp(32px, 5vw, 60px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::after,
+.about-grid::after {
+  content: "❧";
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  color: var(--color-gold);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-photo-frame {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-gold);
+}
+
+.about-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-photo-caption {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-script);
+  font-size: 1.25rem;
+  color: var(--color-ink-headings);
+  border: 1px solid var(--border-gold);
+}
+
+.about-copy h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--color-ink-headings);
+  margin-bottom: 24px;
+}
+
+.about-copy h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.about-copy p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--color-ink-muted);
+  margin-bottom: 20px;
+}
+
+.about-copy p:first-of-type {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  color: var(--color-ink-headings);
+}
+
+/* ==========================================================================
+   CONTACT SECTION & FORM
+   ========================================================================== */
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: var(--bg-card-subtle);
+  border-top: 1px solid var(--border-delicate);
+}
+
+.contact-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-inner h2 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 16px;
+}
+
+.contact-inner h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-olive);
+}
+
+.contact-inner p {
+  font-size: 1.1rem;
+  color: var(--color-ink-muted);
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 5vw, 44px);
+  text-align: left;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-headings);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-delicate);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px var(--color-gold-soft);
+  background: var(--bg-card);
+}
+
+.form-helper {
+  font-size: 0.78rem;
+  color: var(--color-ink-subtle);
+  margin-top: 6px;
+}
+
+.form-status-msg {
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  margin-top: 20px;
+  font-size: 0.92rem;
+  display: none;
+}
+
+.form-status-msg.status-success {
+  display: block;
+  background: rgba(61, 74, 54, 0.12);
+  color: var(--color-olive-dark);
+  border: 1px solid var(--color-olive);
+}
+
+.form-status-msg.status-error {
+  display: block;
+  background: rgba(222, 126, 67, 0.12);
+  color: var(--color-amber);
+  border: 1px solid var(--color-amber);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: var(--bg-page);
+  border-top: 1px solid var(--border-delicate);
+  padding: 60px clamp(24px, 5vw, 64px) 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 28px;
+  margin: 10px 0;
+}
+
+.footer-nav a {
+  font-size: 0.88rem;
+  color: var(--color-ink-muted);
+}
+
+.footer-nav a:hover {
+  color: var(--color-gold);
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: var(--color-ink-subtle);
+  border-top: 1px solid var(--border-delicate);
+  padding-top: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ==========================================================================
+   DEDICATED READING VIEW & MODAL READER
+   ========================================================================== */
+.reader-modal {
+  width: min(920px, 94vw);
+  max-height: 90vh;
+  margin: auto;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  color: var(--color-ink);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  padding: 0;
+  overflow: hidden;
+}
+
+.reader-modal::backdrop {
+  background: rgba(18, 15, 13, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.reader-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-delicate);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  z-index: 10;
+}
+
+.reader-brand {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.reader-close-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-delicate);
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: var(--transition-smooth);
+}
+
+.reader-close-btn:hover {
+  background: var(--color-gold-soft);
+  color: var(--color-gold);
+  transform: rotate(90deg);
+}
+
+.reader-body {
+  padding: 40px clamp(24px, 6vw, 64px) 60px;
+  overflow-y: auto;
+  max-height: calc(90vh - 65px);
+}
+
+.reader-hero-visual {
+  width: 100%;
+  height: 280px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.reader-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reader-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--color-ink-headings);
+  margin-bottom: 12px;
+}
+
+.reader-lead {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-delicate);
+}
+
+/* POEM TEXT — Exact Stanza Preservation */
+.poem-container {
+  margin: 36px 0;
+  font-family: var(--font-editorial);
+  font-size: 1.42rem;
+  line-height: 1.85;
+  color: var(--color-ink-headings);
+}
+
+.poem-stanza {
+  margin-bottom: 2.2rem;
+  white-space: pre-line;
+}
+
+/* BEHIND THE LINES (AUTHOR INTERPRETATION) */
+.behind-the-lines {
+  margin-top: 54px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 36px clamp(20px, 4vw, 40px);
+  position: relative;
+}
+
+.behind-kicker {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.behind-kicker::before {
+  content: "✦";
+  color: var(--color-gold);
+}
+
+.behind-the-lines h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-ink-headings);
+  margin-bottom: 18px;
+}
+
+.behind-copy p {
+  font-size: 1.04rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  margin-bottom: 16px;
+}
+
+.reflection-prompt-box {
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+}
+
+.reflection-prompt-box b {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+
+.reflection-prompt-box p {
+  font-family: var(--font-editorial);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-ink-headings);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.reader-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-delicate);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.reader-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   STANDALONE READING PAGES (writings/the-last-dream.html etc.)
+   ========================================================================== */
+.standalone-reading-page {
+  padding: 50px 0 100px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--color-ink-subtle);
+  margin-bottom: 30px;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-gold);
+}
+
+.standalone-hero-visual {
+  width: 100%;
+  height: clamp(300px, 45vh, 460px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 40px;
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.standalone-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    height: 520px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .values-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-quote {
+    grid-column: span 2;
+    text-align: center;
+    border-left: none;
+    border-top: 1px solid var(--border-delicate);
+    padding-top: 18px;
+    padding-left: 0;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-delicate);
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-smooth);
+    z-index: 99;
+  }
+
+  .site-nav.nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-visual {
+    min-height: 280px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    height: 440px;
+  }
+
+  .note-top, .note-bottom {
+    display: none;
+  }
+
+  .values-strip {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .values-quote {
+    grid-column: span 1;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Fallbacks for missing or unextracted assets */
+.category-photo-wrap {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.25) 0%, rgba(61, 74, 54, 0.5) 100%), #2c3627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-photo-wrap::before {
+  content: "❧";
+  font-size: 3rem;
+  color: var(--color-gold-bright);
+  opacity: 0.6;
+  position: absolute;
+}
+
+.post-art {
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.22) 0%, rgba(61, 74, 54, 0.4) 100%), #2c3627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-art::before {
+  content: "✦";
+  font-size: 2.5rem;
+  color: var(--color-gold-bright);
+  opacity: 0.5;
+  position: absolute;
+}
+
+.featured-visual {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.28) 0%, rgba(42, 51, 37, 0.7) 100%), #2a3325;
+}
+
+.character-stage {
+  background: radial-gradient(circle at 60% 40%, rgba(223, 181, 92, 0.28) 0%, rgba(61, 74, 54, 0.2) 60%, rgba(22, 19, 17, 0.95) 100%), #1c1815;
+}
+
+.about-photo-frame {
+  background: radial-gradient(circle at 50% 50%, rgba(223, 181, 92, 0.2) 0%, rgba(61, 74, 54, 0.3) 100%), #2c3627;
+}
+
+img {
+  transition: opacity 0.3s ease;
+}
+  </style>
+
+    <!-- Modular Scripts -->
+  <script src="data/writings.js"></script>
+  <script src="js/scrub-engine.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Resilient Inline Fallback Scripts (guarantees execution even if unextracted) -->
+  <script>
+    if (!window.WRITINGS) {
+/**
+ * NIJAASWINI — Master Writings Collection
+ * Author: Nijaswini Nandru
+ * 
+ * Non-negotiable rule: Original writings are preserved verbatim with exact titles,
+ * spelling, punctuation, capitalization, line breaks, and stanza formatting.
+ */
+
+window.WRITINGS = [
+  {
+    id: "the-last-dream",
+    title: "The Last Dream",
+    category: "Poetry",
+    date: "",
+    order: 1,
+    readTime: "1 min read",
+    excerpt: "A child's dreams of light and life are swallowed by the sounds of war.",
+    image: "the-last-dream.jpg",
+    imageAlt: "A child looking toward a stormy sky bathed in sunset and the smoke of conflict",
+    body: `Toddler's eyes bloomed with a shade of red 
+a path to death.  
+Dreamed for the shine of light 
+But it was life of fight 
+Sky sparked all at once 
+Soon Storm of rockets greet the ones 
+An eager ear wished to hear the melodious song 
+Alas, I heard the scream of war. 
+I wished it was all a dream
+But fetch the last dream.`,
+    interpretation: {
+      type: "author-context",
+      title: "Mourning Stolen Innocence",
+      kicker: "Behind the Lines",
+      text: [
+        "The poem mourns the childhood that war steals from innocent children. A toddler’s world should be filled with colour, birdsong, family laughter, and dreams of the future.",
+        "Instead, bloodshed paints their world red, rockets turn the sky into a threat, and the sounds of ordinary life are replaced by gunfire and desperate cries.",
+        "The children hope that the horrors are only a nightmare and that morning will restore their world. But the poem’s final tragedy is that they may never wake. Their hope remains, even as war takes away their lives and the tomorrows they deserved."
+      ],
+      reflectionPrompt: "How do we preserve our collective humanity when the most innocent are subjected to conflict?"
+    }
+  },
+  {
+    id: "stranger-in-the-mirror",
+    title: "Stranger in the Mirror",
+    category: "Poetry",
+    date: "",
+    order: 2,
+    readTime: "2 min read",
+    excerpt: "I stare into the mirror, but who stares back?",
+    image: "stranger-in-the-mirror.jpg",
+    imageAlt: "A contemplative silhouette looking into a mirror framed by soft shadows",
+    body: `I stare into the mirror, but who stares back?
+
+The same dark brown eyes, yet never claimed mine,
+the face once mine , yet lost on time,
+a smile feels borrowed,
+a voice heard is hallow .
+
+In stillness began to search traces of “The child
+who built castles in the sky,
+now sifts through ruins, asking why?”
+
+Am I lost, or have I changed?
+Did I drift, or was I rearranged?
+The mirror stayed silent, just reflecting,
+a version of me that my heart deflecting.
+
+The gaze I trace whispers, time has shaped you
+into someone new,
+And I don’t know if that’s good or true.
+
+The mirror reflects a face I barely known ,
+But I’m still here, unsure of what’s been
+unknown.
+
+So I whisper softly, “Who are you?”
+
+The mirror sighs, “look closer....it’s you ! It’s
+always been you”!!`,
+    interpretation: {
+      type: "author-context",
+      title: "The Search for Self Across Time",
+      kicker: "Behind the Lines",
+      text: [
+        "Sometimes life changes us so gradually that one day we no longer recognise the person we have become. The same face looks back, yet the smile feels borrowed and the voice has lost its certainty, shaped by expectations and the passage of days.",
+        "The speaker searches for traces of the child who once built castles in the sky, wondering whether they are lost or simply rearranged.",
+        "The mirror does not offer simple answers—it only reflects the present self. Yet in its closing whisper lies a quiet revelation: perhaps finding yourself is not about returning to who you once were, but learning to recognize who has always been there underneath."
+      ],
+      reflectionPrompt: "When you look back at past versions of yourself, what parts do you still recognize?"
+    }
+  },
+  {
+    id: "i-was-just-there",
+    title: "I Was Just There",
+    category: "Poetry",
+    date: "",
+    order: 3,
+    readTime: "1 min read",
+    excerpt: "No words—just echoes of waves, crashing into me, from ocean graves.",
+    image: "i-was-just-there.jpg",
+    imageAlt: "A solitary contemplative figure standing by vast rolling ocean waves at twilight",
+    body: `I was just there,
+Beneath the wild sky,
+dark clouds hanging high.
+
+No words—just echoes of waves,
+Crashing into me, from ocean graves.
+
+I didn’t sink—held onto hope ,
+To hear, to see, to somehow cope.
+
+An endless view wrapped all around;
+Still, I waited there, spellbound.
+
+And even when death came to greet me
+I was still waiting bare,
+To tell you what my hollow bones
+could never dare to speak into the air.`,
+    interpretation: {
+      type: "author-approved",
+      title: "An Untold Confession Suspended in Infinity",
+      kicker: "Behind the Lines · Author-Approved Meaning",
+      text: [
+        "Core author-approved meaning: This poem expresses an untold confession to someone the speaker loved. The speaker was present, emotionally invested, and close to this person, yet the most important words were never fully spoken into the air.",
+        "The ocean represents infinity: an endless space in which the speaker experiences no meaningful forward or backward movement. The speaker remains suspended in an emotional stillness, unable to progress toward a resolution or return to an earlier, unburdened moment.",
+        "The waiting continues even beyond death. Central to the poem's emotional depth is that the speaker's waiting is not resolved simply by the passage of time or the ending of mortal life. Only 'hollow bones' remain, still holding the unspoken confession that could never dare to be spoken aloud.",
+        "The enduring tragedy is not merely heartbreak, but the heavy permanence of a confession that never found its voice."
+      ],
+      reflectionPrompt: "What thoughts have you kept unspoken, and how long does an unexpressed truth linger?"
+    }
+  },
+  {
+    id: "the-waves-that-keep-me-bound",
+    title: "The Waves That Keep Me Bound",
+    category: "Poetry",
+    date: "July 2024",
+    order: 4,
+    readTime: "1 min read",
+    excerpt: "I long to leave my memories, to make a wave, to ride the tides and find my way.",
+    image: "the-waves-that-keep-me-bound.jpg",
+    imageAlt: "Shoreline waves rolling gently onto sand during golden hour, reflecting returning memories",
+    body: `I long to leave my memories, to make a wave,
+To ride the tides and find my way,
+But waves, they do not let me go,
+They keep me bound, they keep me slow.
+I remain here in the shore
+Yearning to leave the dry tides to come back tight,
+
+But waves, they keep me bound, they keep me slow`,
+    interpretation: {
+      type: "author-approved",
+      title: "The Comfort and Pain of Returning Memories",
+      kicker: "Behind the Lines · Author-Approved Meaning",
+      text: [
+        "Core author-approved meaning: The waves represent recurring memories that continually return to shore. These memories hold a complex duality: they are not entirely painful; some are comforting, meaningful, and cherished. However, they also bring heartache and keep the speaker emotionally tied to the past.",
+        "The speaker longs to say goodbye to the past, make a new wave, and begin again. The poem holds two opposing feelings in delicate tension:",
+        "1. The desire to hold onto memories because they contain comfort, warmth, and meaning.",
+        "2. The pressing need to release their hold so the speaker can ride the tides and move forward.",
+        "Moving forward here does not mean forgetting everything. The author's meaning is more nuanced: the speaker seeks to acknowledge and honor the past while creating space for a new beginning."
+      ],
+      reflectionPrompt: "Which memories bring you both solace and stillness, and when does remembering prevent a new beginning?"
+    }
+  },
+  {
+    id: "the-life-that-remained-sealed",
+    title: "The Life That Remained Sealed",
+    category: "Poetry",
+    date: "December 2024",
+    order: 5,
+    readTime: "1 min read",
+    excerpt: "The book that was never read, the lines that were never spoken.",
+    image: "the-life-that-remained-sealed.jpg",
+    imageAlt: "An antique closed leather journal with gold botanical clasp resting on a dark wooden library desk with a warm glowing lamp",
+    body: `To the LIFE that remained sealed, sits
+quietly, yearning to be opened.
+
+The book that was never read,
+The lines that were never spoken,
+The pages that were never turned beyond the
+cover
+Waiting to reveal the rich story it holds.
+So why let it sit, gathering dust?
+Dive into its depths, as every story must.`,
+    interpretation: {
+      type: "author-context",
+      title: "Unopened Stories and Hidden Possibilities",
+      kicker: "Behind the Lines",
+      text: [
+        "The sealed book represents a life filled with unexpressed feelings, unwritten chapters, and unexplored possibilities. Beneath a quiet surface lies a rich, unread narrative waiting for the courage to turn the first page.",
+        "The poem asks why we let potential gather dust when every life deserves to have its full story spoken and lived."
+      ],
+      reflectionPrompt: "What unread chapter of your own life is waiting for you to turn the page?"
+    }
+  },
+  {
+    id: "until-we-say-hello-again",
+    title: "Until We Say Hello Again",
+    category: "Poetry",
+    date: "",
+    order: 6,
+    readTime: "1 min read",
+    excerpt: "So here’s to the friend who was once Unknown.",
+    image: "until-we-say-hello-again.jpg",
+    imageAlt: "Two distant figures gazing across a peaceful sunset shoreline",
+    body: `The real goodbye happen slowly over time
+There is no see you again , u let the distance grow,
+Until we’re strangers, like we were long ago.
+
+So here’s to the friend who was once Unknown
+
+Dont be a Ghosting Stranger
+Tell me about your new friends u make
+Call me when u just need some one to talk to
+just say hello end with bye .
+Untill we say hello again !`,
+    interpretation: {
+      type: "author-context",
+      title: "Quiet Drifts and Open Doors",
+      kicker: "Behind the Lines",
+      text: [
+        "Friendships do not always end with arguments or dramatic departures. Often they fade quietly as time passes, distance grows, and two people slowly become strangers again.",
+        "“Don’t be a Ghosting Stranger” is an honest, vulnerable appeal for simple human presence: an invitation to share updates, stay in touch, or even exchange a passing greeting without the finality of disappearing.",
+        "The ending leaves room for hope without demanding that things return to how they were. It leaves the door open with warmth, holding onto space for another hello."
+      ],
+      reflectionPrompt: "How do you navigate the quiet drifting of friendships while leaving the door open?"
+    }
+  },
+  {
+    id: "the-voices-we-slowly-forget",
+    title: "The Voices We Slowly Forget",
+    category: "Reflections",
+    date: "",
+    order: 7,
+    readTime: "1 min read",
+    excerpt: "Losing the people you love feels like losing a part of yourself.",
+    image: "the-voices-we-slowly-forget.jpg",
+    imageAlt: "An empty bench overlooking misty evening trees and twilight shadows",
+    body: `Losing the people you love feels like losing a part of yourself. You no longer hear the voice that once echoed in your life every single hour. They no longer call to talk to you. Their calls once filled your recent list, always just a tap away.
+
+Now, have to scroll through your contacts just to find their name And then, without warning, time begins to steal even the smallest traces. Heartbreakingly, you begin to realise that you no longer remember what they sounded like !!!!`,
+    interpretation: {
+      type: "reflection-note",
+      title: "The Quiet Cruelty of Time",
+      kicker: "Behind the Reflection",
+      text: [
+        "Losing someone is rarely a single event; it unfolds across quiet increments of time. The sudden absence of their calls is followed by the realization that their name has drifted down the contact list.",
+        "And then, time steals the sound of their voice. This piece touches on the tender pain of remembering the feeling of a person while grieving the loss of their tangible echoes."
+      ],
+      reflectionPrompt: "What subtle details of the people you miss do you hold closest?"
+    }
+  },
+  {
+    id: "reality",
+    title: "Reality",
+    category: "Reflections",
+    date: "September 2024",
+    order: 8,
+    readTime: "1 min read",
+    excerpt: "Teenager to adult transformation is the difficult phase of life because this is the period in which we fight with ourselves.",
+    image: "reality.jpg",
+    imageAlt: "A lone traveler looking out over vast layered horizons and gentle morning mist",
+    body: `Teenager to adult transformation is the difficult phase of life because this is the period in which we fight with ourselves.
+We start of by thinking we are pearl of the sea but slowly realize there are many more pearls which shine more,
+within this span of time we compare with others degrade our self worth and create a lot of insecurites. By the time we realize that every pearl as its own uniqueness we step into adulthood`,
+    interpretation: {
+      type: "reflection-note",
+      title: "Stepping into One’s Own Light",
+      kicker: "Behind the Reflection",
+      text: [
+        "The transition from youth to adulthood brings a quiet battle against comparison. In discovering the vastness of the world, we risk measuring our brilliance against others.",
+        "True maturity begins when we recognize that every pearl has its own intrinsic value, and someone else’s radiance does not diminish our own."
+      ],
+      reflectionPrompt: "How did you learn to stop comparing your light to that of others?"
+    }
+  },
+  {
+    id: "when-did-we-change",
+    title: "When Did We Change?",
+    category: "Reflections",
+    date: "August 2024",
+    order: 9,
+    readTime: "1 min read",
+    excerpt: "When did we change from laughing freely to hiding behind forced smiles?",
+    image: "when-did-we-change.jpg",
+    imageAlt: "A quiet room with evening moonlight casting soft window reflections",
+    body: `When did we change from crying out and sharing our every feeling to hesitating and hiding everything?
+
+When did we change from being selfless to holding expectations from others?
+
+When did we change from seeking guidance to confidently declaring, "I know what I'm doing"?
+
+When did we change from connecting deeply with others to building walls around our hearts?
+
+When did we change from laughing freely to hiding behind forced smiles?
+
+When did we change from trusting easily to questioning every intention?
+
+When did we change from making memories to just taking pictures?`,
+    interpretation: {
+      type: "reflection-note",
+      title: "Remembering Childhood Openness",
+      kicker: "Behind the Reflection",
+      text: [
+        "Seven questions that trace the quiet erosion of childhood vulnerability. In learning to protect ourselves as adults, we inadvertently build walls around the very openness that once made life rich.",
+        "The reflection invites us to question whether growing up must always mean growing guarded."
+      ],
+      reflectionPrompt: "Which of these questions resonated deepest with your own journey?"
+    }
+  },
+  {
+    id: "they-were-supposed-to-come-back",
+    title: "THEY WERE SUPPOSED TO COME BACK",
+    subtitle: "Somewhere beyond the flooded riverbanks, a search continued, a family waited, and a trail of unanswered questions grew longer. In the chaos that followed, what had become of those who never returned?",
+    category: "Articles",
+    date: "October 2026",
+    order: 10,
+    readTime: "6 min read",
+    excerpt: "Somewhere beyond the flooded riverbanks, a search continued, a family waited, and a trail of unanswered questions grew longer.",
+    image: "they-were-supposed-to-come-back.jpg",
+    imageAlt: "A lone glowing lantern on misty riverbanks beside swollen mountain waters at twilight",
+    body: `At 9:14 in the morning on the 26th of August 2026, Bima Gole heard a voice she would never be able to forget.
+
+It was a casual call with her elder sister, Uma, over the phone when someone in the background shouted:
+“Run, run, we have to run.”
+
+Then, the call disconnected.
+
+Bima called back. No answer.
+
+She tried again, expecting Uma to pick up and explain what had happened. Maybe the network had failed. Maybe her sister had dropped the phone while trying to get somewhere safe. Plenty of explanations were possible, and Bima had no reason to believe the worst just yet.
+
+But the phone remained silent.
+
+And just like that, an ordinary morning took an unexpected turn.
+
+On 26th of August, heavy flash flooding impacted communities along Nepal’s Bhotekoshi and Trishuli river systems. Settlements were flooded with water, mud, and debris; infrastructure was damaged, and people went missing. All of a sudden, families were looking for their loved ones who were supposed to be coming home from work or traveling.
+
+Uma and her children were among those reported missing.
+
+Bima began visiting hospitals, police offices, and other places where someone might have information. She carried her sister's photograph. She asked questions. She kept looking.
+
+What else could she do?
+
+She had heard Uma's voice only moments before the call ended. She had no explanation for the silence, no confirmed account of what happened next. All she remembers are those few seconds.
+
+Nine fourteen in the morning.ie;9:14
+
+It's strange how a normal moment can become something else after something terrible happens. What you would normally forget becomes a conversation you replay in your mind again and again. And then you start to wonder if there was a clue you didn't see, if there was something you should have caught, or something you could have handled differently.
+
+Bima could remember what she had heard. What she could not know was what happened after the call ended.
+
+And so she searched.
+
+With each passing day, the true horror of the catastrophe unfolded, as rescue crews battled collapsed roads, crumbling structures, and dangerous conditions. For many families waiting, survival meant a tireless, simple routine: keep calling, keep asking, keep looking.
+
+A phone might be switched off. A person might be trapped somewhere. They might be safe in a shelter, unable to call home. There was always another possibility to consider.
+
+That uncertainty was exhausting. But it also left room for hope.
+
+Then came news of two men trapped underground at the Trishuli 3A hydropower project.
+
+Sanjay Sah, a mechanical foreman, and Kabir Maharjan, a mechanical supervisor, had been caught inside the facility when floodwaters overwhelmed the area. According to reports, Sah had tried to help colleagues escape as the water entered the underground section. Maharjan had been at the site for maintenance work. Both men became trapped.
+
+Their families had no reliable way of knowing what was happening to them.
+
+Maharjan had spoken to his wife that morning. He had told her that he and his colleagues were going to have breakfast before heading underground, warning her that his mobile phone might not work there.
+
+An ordinary conversation. An ordinary warning.
+
+Then the flood came.
+
+For nine days, the men were shut off from the world. Rescuers were trying to reach damaged underground structures, crawling through mud and rubble. Conditions were dangerous; there were difficulties at every turn.
+
+The rescuers heard voices from inside the tunnel.
+
+There were people living there.
+
+On September 4, Sah and Maharjan were brought out alive and taken for medical treatment in Kathmandu.
+
+Nine days underground, and they had survived.
+
+For their families, the uncertainty finally had an answer. For other families still searching, the rescue offered something powerful: a reason not to give up.
+
+If these men could survive for nine days in darkness, perhaps someone else was still alive somewhere. Perhaps another trapped person was waiting to be found. Perhaps the next announcement would bring another family the news it had been hoping for.
+
+But hope, however necessary, was not proof.
+
+The rescue could not tell Bima where Uma was. It could not tell her whether her sister and the children were safe. One family's extraordinary reunion could offer hope to thousands without resolving the question that mattered most to any single one of them.
+
+Where was their person?
+
+As the search continued, families checked hospitals and lists, showing photographs to everyone they met. They were looking for more than a name. They were looking for something that could explain what had happened.
+
+Just like that, the search itself changed.
+
+At first, families hoped their loved ones would walk back through the door. Later, some began looking for signs that could help identify those who had been recovered.
+
+In Syaphrubesi, Raj Kumar Diyali disappeared with his wife, Shriti, and their four-year-old son, Siraj. Their relatives searched for them along the river. Then a human hand was found downstream, and the family feared it might belong to Raj Kumar. Forensic samples were provided for identification.
+
+It is difficult to imagine the moment when a family begins waiting for identification instead of a reunion.
+
+The question changes, little by little. First, Where are they? Then, Are they alive? And finally, What actually happened?
+
+Eventually, even a painful certainty became softer than the sharp edges of doubt.
+
+On October 5, Nepal ended its active search-and-rescue operation and shifted its focus toward rehabilitation and reconstruction. Reports put the number of recovered bodies at at least 1,455, while 5,285 people remained missing. Thousands of homes and essential facilities had also been affected.
+
+The figures were necessary. They showed the scale of the disaster and the enormous work still facing the country.
+
+But a national statistic can’t feel the ache of waiting for just one person.
+
+It cannot tell us how many times someone checked a telephone, how many hospitals a family visited, or how carefully a photograph was examined in the hope of recognizing a familiar face.
+
+For one family, the end of the rescue operation might have marked the beginning of accepting a loss. For another, it may have been a relief that a loved one had been found. The announcement didn’t settle the fate of other families still waiting.
+
+An operation can be stopped because the situation requires a change of priorities. Grief doesn't work on the same clock.
+
+Roads can be repaired. Houses can be rebuilt. People can get back to work and get their lives back in order again. But when someone is missing, the normal parts of life can seem strangely incomplete.
+
+A telephone number stays saved. A photograph remains in a drawer. The memory of a last conversation often burns in a family's mind more than the entire aftermath of the disaster.
+
+These personal details seem minor next to swallowed communities and decimated infrastructure. But they do show what the disaster has really changed.
+
+A missing person is not just another name on a list. They are someone's sister, parent, partner, or child. They have routines, responsibilities, and relationships that still matter to those waiting for them.
+
+It is a story of the human need for an answer when an ordinary day ends in extraordinary uncertainty.
+
+The available reporting doesn't tell us what happened to Uma and her children. Without proof, their story can’t honestly be turned into either a reunion or a confirmed goodbye.
+
+And that’s a tough ending to walk away from—unresolved.
+
+Bima can’t rewind to 9:14 that morning and resume the conversation. She can’t ask Uma what happened after the call got cut off. Silence alone can’t tell her if her sister was frightened, hurt, trapped, or beyond help.
+
+She can only seek trustworthy information and hold on to the memory of the last time she heard her sister’s voice.
+
+Across Nepal, other families have lived their own versions of this silence. Their situations are different, but the question behind them is painfully familiar:What happened to the person who was supposed to come home?
+
+Eventually, roads are repaired, homes are rebuilt, and the story fades from the evening news. But the families of the missing are left behind. They cannot move on. Their disaster doesn't end when the water clears; it persists in the silence of an unanswered phone, the ache of a photograph, and the endless search through official lists. They are left living in the painful gap between memory and closure.
+
+Bima's story began with a conversation that ended too soon. This tragedy is measured in lives lost, people rescued, and thousands still unaccounted for.
+
+Yet its deepest question remains personal:
+
+Where were Uma and her children?
+
+No official records fill the silence, and no ending can responsibly be written in their place. All that lingers is the memory of that last morning—a sister’s voice on the line, a sudden wave of fear in the background, and a call that suddenly stopped. They never planned for a final farewell. They simply expected ordinary life to continue: another call, another visit, another regular day together.
+
+They were supposed to come back.
+
+And for the families still waiting for answers, the hardest part is not knowing whether the waiting will ever end.`,
+    interpretation: {
+      type: "article-note",
+      title: "The Human Ache of the Unresolved",
+      kicker: "Behind the Article",
+      text: [
+        "Natural disasters are routinely quantified by casualty numbers, economic estimates, and infrastructure damage. But statistics cannot capture the interior reality of those who wait for a phone to ring.",
+        "This long-form piece chronicles the catastrophic August 2026 flash floods along Nepal’s Bhotekoshi and Trishuli river systems through the personal lens of waiting. It explores the harrowing liminal space between hope and loss—the gap where families live when loved ones neither return nor are confirmed gone.",
+        "A missing person is never merely a statistic. They represent an unfinished sentence, an unanswered morning call, and a lifetime of presence abruptly replaced by silence."
+      ],
+      reflectionPrompt: "How do we hold space for the families of the missing when the world moves on to rebuilding?"
+    }
+  }
+];
+
+window.PLACEHOLDERS = {
+  renewal: {
+    id: "renewal",
+    title: "Renewal",
+    category: "Reflections",
+    status: "Awaiting Author Manuscript",
+    note: "This identified reflection piece by Nijaswini Nandru is currently in preparation. The authentic original text will be published here upon release by the author."
+  },
+  articles: {
+    title: "Articles by Nijaswini Nandru",
+    category: "Articles",
+    status: "Editorial Preparation",
+    note: "The author's long-form articles, literary essays, and thoughtful examinations of life and art are currently being curated for publication. Check back soon or leave a note via the Contact page."
+  }
+};
+
+    }
+  </script>
+  <script>
+    if (!window.CharacterScrubber) {
+/**
+ * NIJAASWINI — Cinematic Illustrated Author Scrubbing Engine
+ * 
+ * HTML5 Canvas & requestAnimationFrame rendering engine.
+ * Supports:
+ * - Mouse horizontal scrubbing
+ * - Touch interaction with vertical scroll passthrough
+ * - Eased interpolation (lerp)
+ * - Progressive frame preloading with progress telemetry
+ * - Instant poster display (zero blank flash)
+ * - Graceful fallback to interactive ambient canvas if sequence is unavailable
+ * - DevicePixelRatio crisp rendering
+ * - Configurable resting pose & idle settling
+ * - Reduced-motion accessibility preference
+ * - Memory & event listener cleanup
+ */
+
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define([], factory);
+  } else if (typeof module === 'object' && module.exports) {
+    module.exports = factory();
+  } else {
+    root.CharacterScrubber = factory();
+  }
+})(typeof self !== 'undefined' ? self : this, function () {
+  'use strict';
+
+  function parseObjectPosition(posStr) {
+    if (!posStr) return { x: 0.5, y: 0.5 };
+    const parts = posStr.trim().split(/\s+/);
+    const parseVal = (val) => {
+      if (val === 'center') return 0.5;
+      if (val === 'left' || val === 'top') return 0;
+      if (val === 'right' || val === 'bottom') return 1;
+      if (val.endsWith('%')) return parseFloat(val) / 100;
+      const parsed = parseFloat(val);
+      return isNaN(parsed) ? 0.5 : parsed;
+    };
+    return {
+      x: parts.length >= 1 ? parseVal(parts[0]) : 0.5,
+      y: parts.length >= 2 ? parseVal(parts[1]) : 0.5
+    };
+  }
+
+  function getFrameUrl(template, index) {
+    const numStr3 = String(index).padStart(3, '0');
+    const numStr2 = String(index).padStart(2, '0');
+    const numStr = String(index);
+    return template
+      .replace('{fff}', numStr3)
+      .replace('{ff}', numStr2)
+      .replace('{f}', numStr)
+      .replace('{000}', numStr3)
+      .replace('{00}', numStr2)
+      .replace('{index}', numStr);
+  }
+
+  function drawCover(ctx, img, canvasWidth, canvasHeight, alignX, alignY, offsetX = 0, offsetY = 0, scaleMult = 1) {
+    if (!img || !img.naturalWidth || !img.naturalHeight) return;
+    const imgRatio = img.naturalWidth / img.naturalHeight;
+    const canvasRatio = canvasWidth / canvasHeight;
+
+    let drawWidth, drawHeight;
+    if (imgRatio > canvasRatio) {
+      drawHeight = canvasHeight * scaleMult;
+      drawWidth = drawHeight * imgRatio;
+    } else {
+      drawWidth = canvasWidth * scaleMult;
+      drawHeight = drawWidth / imgRatio;
+    }
+
+    const maxDeltaX = drawWidth - canvasWidth;
+    const maxDeltaY = drawHeight - canvasHeight;
+
+    const dx = -maxDeltaX * alignX + offsetX;
+    const dy = -maxDeltaY * alignY + offsetY;
+
+    ctx.drawImage(img, dx, dy, drawWidth, drawHeight);
+  }
+
+  function initScrubVideo(userConfig = {}) {
+    const defaultConfig = {
+      FRAME_SRC: 'assets/frames/frame-{fff}.webp',
+      POSTER_SRC: 'assets/images/nijaaswini-hero.png',
+      FRAME_COUNT: 300,
+      FPS: 30,
+      OBJECT_POSITION: 'center 8%',
+      SENSITIVITY: 0.85,
+      EASE: 0.12,
+      IDLE_MS: 1500,
+      NEUTRAL: 0.5, // 50% resting pose (frame 150)
+      canvas: null,
+      container: null,
+      onProgress: null,
+      onStatusChange: null
+    };
+
+    let config = { ...defaultConfig, ...userConfig };
+
+    let canvas = config.canvas;
+    let ownCanvas = false;
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.className = 'character-canvas';
+      canvas.setAttribute('aria-hidden', 'true');
+      if (config.container) {
+        config.container.appendChild(canvas);
+      } else {
+        document.body.appendChild(canvas);
+      }
+      ownCanvas = true;
+    }
+
+    const ctx = canvas.getContext('2d', { alpha: true });
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // State
+    const duration = config.FRAME_COUNT / config.FPS;
+    let currentTime = duration * config.NEUTRAL;
+    let targetTime = currentTime;
+    let prevX = null;
+    let isInteracting = false;
+    let lastInputTime = performance.now();
+    let isDestroyed = false;
+    let rafId = null;
+
+    // Poster state
+    let posterImg = new Image();
+    let posterLoaded = false;
+    posterImg.crossOrigin = 'anonymous';
+    posterImg.src = config.POSTER_SRC;
+    posterImg.onload = () => {
+      posterLoaded = true;
+      requestDraw();
+    };
+
+    // Frame sequence state
+    const frames = new Array(config.FRAME_COUNT);
+    let framesLoadedCount = 0;
+    let sequenceAvailable = false;
+    let probingFinished = false;
+
+    // Subtle ambient particle floating state for rich cinematic look
+    const particles = [];
+    const PARTICLE_COUNT = 24;
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push({
+        x: Math.random(),
+        y: Math.random(),
+        size: Math.random() * 2.5 + 1,
+        speedX: (Math.random() - 0.5) * 0.0003,
+        speedY: -Math.random() * 0.0006 - 0.0002,
+        alpha: Math.random() * 0.5 + 0.2,
+        pulse: Math.random() * Math.PI * 2
+      });
+    }
+
+    function emitStatus(extra = {}) {
+      if (typeof config.onStatusChange === 'function') {
+        const frameIndex = Math.min(config.FRAME_COUNT, Math.max(1, Math.round((currentTime / duration) * (config.FRAME_COUNT - 1)) + 1));
+        const status = {
+          currentTime: Number(currentTime.toFixed(3)),
+          targetTime: Number(targetTime.toFixed(3)),
+          frameIndex,
+          totalFrames: config.FRAME_COUNT,
+          sensitivity: config.SENSITIVITY,
+          ease: config.EASE,
+          isInteracting,
+          usingPoster: !sequenceAvailable,
+          framesLoaded: framesLoadedCount,
+          sequenceAvailable,
+          probingFinished,
+          ...extra
+        };
+        config.onStatusChange(status);
+      }
+    }
+
+    function emitProgress() {
+      if (typeof config.onProgress === 'function') {
+        const ratio = config.FRAME_COUNT > 0 ? framesLoadedCount / config.FRAME_COUNT : 0;
+        config.onProgress(ratio, framesLoadedCount, config.FRAME_COUNT);
+      }
+    }
+
+    // Probe first frame to verify if sequence exists
+    function probeSequence() {
+      const probeImg = new Image();
+      probeImg.src = getFrameUrl(config.FRAME_SRC, 1);
+      probeImg.onload = () => {
+        sequenceAvailable = true;
+        probingFinished = true;
+        loadSequenceProgressively();
+      };
+      probeImg.onerror = () => {
+        sequenceAvailable = false;
+        probingFinished = true;
+        emitProgress();
+        emitStatus({ statusText: 'Poster Reference (Sequence Pending)' });
+      };
+    }
+
+    function loadSequenceProgressively() {
+      // Load neutral frame first
+      const neutralIndex = Math.round(config.FRAME_COUNT * config.NEUTRAL);
+      loadSingleFrame(neutralIndex, () => {
+        requestDraw();
+        // Then load in batches outward
+        for (let i = 1; i <= config.FRAME_COUNT; i++) {
+          if (i !== neutralIndex) {
+            loadSingleFrame(i);
+          }
+        }
+      });
+    }
+
+    function loadSingleFrame(index, cb) {
+      const img = new Image();
+      img.src = getFrameUrl(config.FRAME_SRC, index);
+      img.onload = () => {
+        frames[index - 1] = img;
+        framesLoadedCount++;
+        emitProgress();
+        emitStatus();
+        if (cb) cb();
+      };
+      img.onerror = () => {
+        // graceful handle
+        framesLoadedCount++;
+        emitProgress();
+      };
+    }
+
+    // Responsive Canvas Resizing with DPR cap to protect GPU memory
+    function resizeCanvas() {
+      if (!canvas) return;
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width || canvas.parentElement?.clientWidth || window.innerWidth;
+      const height = rect.height || canvas.parentElement?.clientHeight || window.innerHeight;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      requestDraw();
+    }
+
+    // Rendering
+    function renderFrame(now) {
+      if (isDestroyed || !ctx) return;
+
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const width = canvas.width;
+      const height = canvas.height;
+
+      ctx.clearRect(0, 0, width, height);
+
+      // Lerp current time toward target time
+      if (!prefersReducedMotion) {
+        currentTime += (targetTime - currentTime) * config.EASE;
+
+        // Idle settling back to resting pose
+        if (!isInteracting && (now - lastInputTime > config.IDLE_MS)) {
+          const neutralTime = duration * config.NEUTRAL;
+          targetTime += (neutralTime - targetTime) * (config.EASE * 0.4);
+        }
+      } else {
+        currentTime = duration * config.NEUTRAL;
+      }
+
+      const normPos = parseObjectPosition(config.OBJECT_POSITION);
+      const currentNorm = currentTime / duration; // 0 to 1
+      const frameIndex = Math.min(config.FRAME_COUNT, Math.max(1, Math.round(currentNorm * (config.FRAME_COUNT - 1)) + 1));
+
+      let activeImage = null;
+      if (sequenceAvailable && frames[frameIndex - 1] && frames[frameIndex - 1].complete) {
+        activeImage = frames[frameIndex - 1];
+      } else if (posterLoaded) {
+        activeImage = posterImg;
+      }
+
+      if (activeImage && activeImage.complete) {
+        // If using poster, calculate interactive perspective shift based on current scrub time
+        let subtleShiftX = 0;
+        let subtleShiftY = 0;
+        let subtleScale = 1.0;
+
+        if (!sequenceAvailable) {
+          // Interactive subtle 3D parallax shift so moving mouse responds dynamically even with poster
+          const deltaFromNeutral = (currentNorm - config.NEUTRAL) * 2; // -1 to 1
+          subtleShiftX = deltaFromNeutral * (width * 0.025);
+          subtleShiftY = Math.sin(now * 0.0015) * (height * 0.005);
+          subtleScale = 1.0 + Math.abs(deltaFromNeutral) * 0.015;
+        }
+
+        drawCover(
+          ctx,
+          activeImage,
+          width,
+          height,
+          normPos.x,
+          normPos.y,
+          subtleShiftX,
+          subtleShiftY,
+          subtleScale
+        );
+      }
+
+      // Atmospheric golden literary particles layer (subtle, warm, cinematic)
+      drawAtmosphere(ctx, width, height, now);
+
+      emitStatus();
+
+      rafId = requestAnimationFrame(renderFrame);
+    }
+
+    function drawAtmosphere(context, w, h, time) {
+      context.save();
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.y < -0.05) p.y = 1.05;
+        if (p.x < -0.05) p.x = 1.05;
+        if (p.x > 1.05) p.x = -0.05;
+
+        const px = p.x * w;
+        const py = p.y * h;
+        const alpha = p.alpha * (0.6 + 0.4 * Math.sin(time * 0.002 + p.pulse));
+
+        context.beginPath();
+        context.arc(px, py, p.size, 0, Math.PI * 2);
+        context.fillStyle = `rgba(216, 178, 110, ${alpha.toFixed(2)})`; // warm antique gold
+        context.fill();
+      }
+      context.restore();
+    }
+
+    function requestDraw() {
+      // Loop is handled by RAF, but ensures a frame is queued
+      if (!rafId && !isDestroyed) {
+        rafId = requestAnimationFrame(renderFrame);
+      }
+    }
+
+    // Scrub Interactions
+    function handlePointerDown(e) {
+      if (prefersReducedMotion) return;
+      isInteracting = true;
+      prevX = e.clientX || (e.touches && e.touches[0].clientX);
+      lastInputTime = performance.now();
+    }
+
+    function handlePointerMove(e) {
+      if (prefersReducedMotion) return;
+      const currentX = e.clientX || (e.touches && e.touches[0].clientX);
+      if (currentX === undefined) return;
+
+      if (prevX === null) {
+        prevX = currentX;
+        return;
+      }
+
+      const deltaX = currentX - prevX;
+      prevX = currentX;
+
+      const viewportWidth = window.innerWidth || 1000;
+      const offset = (deltaX / viewportWidth) * config.SENSITIVITY * duration;
+
+      targetTime = Math.max(0, Math.min(duration, targetTime + offset));
+      lastInputTime = performance.now();
+      isInteracting = true;
+    }
+
+    function handlePointerUp() {
+      isInteracting = false;
+      prevX = null;
+      lastInputTime = performance.now();
+    }
+
+    // Attach scrub events to the stage or window
+    const scrubTarget = config.container || window;
+
+    scrubTarget.addEventListener('mousemove', handlePointerMove, { passive: true });
+    window.addEventListener('mouseup', handlePointerUp, { passive: true });
+
+    // Touch support (using passive touchmove to allow smooth vertical page scroll)
+    scrubTarget.addEventListener('touchstart', handlePointerDown, { passive: true });
+    scrubTarget.addEventListener('touchmove', handlePointerMove, { passive: true });
+    scrubTarget.addEventListener('touchend', handlePointerUp, { passive: true });
+    scrubTarget.addEventListener('touchcancel', handlePointerUp, { passive: true });
+
+    // Window resize
+    window.addEventListener('resize', resizeCanvas, { passive: true });
+
+    // Initialize
+    resizeCanvas();
+    probeSequence();
+    rafId = requestAnimationFrame(renderFrame);
+
+    return {
+      updateConfig(newOpts) {
+        config = { ...config, ...newOpts };
+        emitStatus();
+      },
+      setFrame(index) {
+        const norm = (index - 1) / (config.FRAME_COUNT - 1);
+        targetTime = norm * duration;
+        lastInputTime = performance.now();
+      },
+      destroy() {
+        isDestroyed = true;
+        if (rafId) cancelAnimationFrame(rafId);
+        scrubTarget.removeEventListener('mousemove', handlePointerMove);
+        window.removeEventListener('mouseup', handlePointerUp);
+        scrubTarget.removeEventListener('touchstart', handlePointerDown);
+        scrubTarget.removeEventListener('touchmove', handlePointerMove);
+        scrubTarget.removeEventListener('touchend', handlePointerUp);
+        scrubTarget.removeEventListener('touchcancel', handlePointerUp);
+        window.removeEventListener('resize', resizeCanvas);
+        if (ownCanvas && canvas.parentElement) {
+          canvas.parentElement.removeChild(canvas);
+        }
+      },
+      getState() {
+        return {
+          currentTime,
+          targetTime,
+          duration,
+          sequenceAvailable,
+          framesLoadedCount
+        };
+      }
+    };
+  }
+
+  return { initScrubVideo };
+});
+
+    }
+  </script>
+  <script>
+    if (!window.appLoaded) {
+      window.appLoaded = true;
+/**
+ * NIJAASWINI — Master Website Controller
+ * Author: Nijaswini Nandru
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const writings = Array.isArray(window.WRITINGS) ? window.WRITINGS : [];
+  const placeholders = window.PLACEHOLDERS || {};
+
+  // Elements
+  const grid = document.getElementById('postGrid');
+  const emptyState = document.getElementById('emptyState');
+  const searchInput = document.getElementById('searchInput');
+  const filters = Array.from(document.querySelectorAll('.filter'));
+  const modal = document.getElementById('readerModal');
+  const themeToggle = document.getElementById('themeToggle');
+  const menuToggle = document.getElementById('menuToggle');
+  const siteNav = document.getElementById('siteNav');
+  const writingCountBadge = document.getElementById('writingCountBadge');
+
+  // State
+  let activeFilter = 'All';
+  let activePost = null;
+  let scrubberController = null;
+
+  // 1. Initialize Cinematic Character Scrubbing Engine
+  const characterStage = document.getElementById('characterStage');
+  const characterCanvas = document.getElementById('characterCanvas');
+  const valFrame = document.getElementById('valFrame');
+  const scrubStatus = document.getElementById('scrubStatus');
+
+  if (characterStage && characterCanvas && window.CharacterScrubber) {
+    scrubberController = window.CharacterScrubber.initScrubVideo({
+      FRAME_SRC: 'assets/frames/frame-{fff}.webp',
+      POSTER_SRC: 'assets/images/nijaaswini-hero.png',
+      FRAME_COUNT: 300,
+      FPS: 30,
+      OBJECT_POSITION: 'center 8%',
+      SENSITIVITY: 0.85,
+      EASE: 0.12,
+      IDLE_MS: 1500,
+      NEUTRAL: 0.5,
+      canvas: characterCanvas,
+      container: characterStage,
+      onStatusChange: (status) => {
+        if (valFrame) {
+          if (status.sequenceAvailable) {
+            valFrame.textContent = `${status.frameIndex} / ${status.totalFrames}`;
+          } else {
+            valFrame.textContent = `Poster Reference (Pose ${status.frameIndex})`;
+          }
+        }
+        if (scrubStatus) {
+          if (status.isInteracting) {
+            scrubStatus.textContent = 'Scrubbing ✦';
+            scrubStatus.style.color = '#dfb55c';
+          } else if (status.usingPoster) {
+            scrubStatus.textContent = 'Ambient Dynamic ❧';
+            scrubStatus.style.color = '#c4b9a8';
+          } else {
+            scrubStatus.textContent = 'Resting Pose';
+            scrubStatus.style.color = '#c4b9a8';
+          }
+        }
+      }
+    });
+
+    // Make scrubber globally accessible for debugging or external controls
+    window.scrubber = scrubberController;
+  }
+
+  // 2. Format Date
+  function formatDate(date) {
+    if (!date) return 'A note from the author';
+    return date;
+  }
+
+  // 3. Render Writings Cards
+  function renderPosts() {
+    if (!grid) return;
+
+    const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+
+    // Filter writings
+    const filtered = writings.filter(post => {
+      const matchCategory = (activeFilter === 'All') || (post.category === activeFilter);
+      const searchBlob = `${post.title} ${post.category} ${post.excerpt} ${post.body}`.toLowerCase();
+      const matchQuery = !query || searchBlob.includes(query);
+      return matchCategory && matchQuery;
+    });
+
+    // Update count badge
+    if (writingCountBadge) {
+      const typeLabel = activeFilter === 'All' ? 'writing' : (activeFilter === 'Poetry' ? 'poem' : (activeFilter === 'Articles' ? 'article' : 'piece'));
+      writingCountBadge.textContent = `Showing ${filtered.length} ${typeLabel}${filtered.length === 1 ? '' : 's'}`;
+    }
+
+    let html = '';
+
+    // Render cards
+    if (filtered.length > 0) {
+      html += filtered.map((post, idx) => {
+        const orderNum = String(post.order || idx + 1).padStart(2, '0');
+        return `
+          <article class="post-card" data-category="${post.category}">
+            <button class="post-card-btn" data-open="${post.id}" aria-label="Read ${escapeHTML(post.title)}">
+              <div class="post-art">
+                <img src="assets/images/${escapeHTML(post.image || 'home-window.jpg')}" 
+                     alt="${escapeHTML(post.imageAlt || post.title)}" 
+                     loading="lazy" onerror="this.style.opacity='0';">
+                <span class="post-art-number">${orderNum}</span>
+                <span class="post-art-category">${escapeHTML(post.category)}</span>
+              </div>
+              <div class="post-card-content">
+                <p class="post-meta">
+                  <span>${escapeHTML(post.category)}</span>
+                  <span>·</span>
+                  <span>${escapeHTML(formatDate(post.date))}</span>
+                </p>
+                <h3>${escapeHTML(post.title)}</h3>
+                <p class="post-excerpt">${escapeHTML(post.excerpt)}</p>
+                <span class="card-read-action">
+                  Read complete ${post.category === 'Poetry' ? 'poem' : 'piece'} <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </button>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // Include designated placeholders when relevant category is active
+    if (!query) {
+      if (activeFilter === 'All' || activeFilter === 'Reflections') {
+        if (placeholders.renewal) {
+          html += `
+            <div class="placeholder-card" id="renewal-placeholder">
+              <span class="placeholder-badge">${escapeHTML(placeholders.renewal.status)}</span>
+              <h3>${escapeHTML(placeholders.renewal.title)}</h3>
+              <p>${escapeHTML(placeholders.renewal.note)}</p>
+            </div>
+          `;
+        }
+      }
+
+      if ((activeFilter === 'All' || activeFilter === 'Articles') && !writings.some(w => w.category === 'Articles')) {
+        if (placeholders.articles) {
+          html += `
+            <div class="placeholder-card" id="articles-placeholder">
+              <span class="placeholder-badge">${escapeHTML(placeholders.articles.status)}</span>
+              <h3>${escapeHTML(placeholders.articles.title)}</h3>
+              <p>${escapeHTML(placeholders.articles.note)}</p>
+            </div>
+          `;
+        }
+      }
+    }
+
+    grid.innerHTML = html;
+
+    if (emptyState) {
+      const hasAnyCards = filtered.length > 0 || (!query && (activeFilter === 'Articles' || activeFilter === 'Reflections'));
+      emptyState.hidden = hasAnyCards;
+    }
+  }
+
+  // 4. Dedicated Reader (Modal & Deep Linking)
+  function openPost(post, updateHash = true) {
+    if (!post || !modal) return;
+    activePost = post;
+
+    if (updateHash) {
+      history.replaceState(null, '', `#writing-${post.id}`);
+    }
+
+    const orderNum = String(post.order || writings.indexOf(post) + 1).padStart(2, '0');
+    document.getElementById('readerMeta').textContent = `${orderNum} · ${post.category.toUpperCase()} · ${formatDate(post.date).toUpperCase()} · ${post.readTime || '1 min read'}`;
+    document.getElementById('readerTitle').textContent = post.title;
+    document.getElementById('readerLead').textContent = post.excerpt || '';
+
+    // Hero visual in reader
+    const heroVisual = document.getElementById('readerVisual');
+    if (heroVisual) {
+      heroVisual.src = `assets/images/${post.image || 'home-window.jpg'}`;
+      heroVisual.alt = post.imageAlt || post.title;
+    }
+
+    // Poem or Reflection text preservation
+    const textContainer = document.getElementById('readerText');
+    textContainer.replaceChildren();
+
+    if (post.category === 'Poetry') {
+      textContainer.className = 'poem-container';
+      // Split into stanzas by double line breaks
+      const stanzas = String(post.body || '').split(/\n\s*\n/);
+      stanzas.forEach(stanza => {
+        const stanzaEl = document.createElement('div');
+        stanzaEl.className = 'poem-stanza';
+        stanzaEl.textContent = stanza;
+        textContainer.appendChild(stanzaEl);
+      });
+    } else {
+      textContainer.className = 'reflection-container';
+      const paragraphs = String(post.body || '').split(/\n\s*\n/);
+      paragraphs.forEach(pText => {
+        const p = document.createElement('p');
+        p.style.marginBottom = '1.6rem';
+        p.style.fontSize = '1.15rem';
+        p.style.lineHeight = '1.85';
+        p.textContent = pText;
+        textContainer.appendChild(p);
+      });
+    }
+
+    // Behind the Lines (Interpretation) Section
+    const interpContainer = document.getElementById('readerInterpretation');
+    interpContainer.replaceChildren();
+
+    if (post.interpretation) {
+      const interp = post.interpretation;
+      const interpSection = document.createElement('div');
+      interpSection.className = 'behind-the-lines';
+
+      const kicker = document.createElement('p');
+      kicker.className = 'behind-kicker';
+      kicker.textContent = interp.kicker || 'Behind the Lines';
+      interpSection.appendChild(kicker);
+
+      const heading = document.createElement('h3');
+      heading.textContent = interp.title;
+      interpSection.appendChild(heading);
+
+      const copyDiv = document.createElement('div');
+      copyDiv.className = 'behind-copy';
+      (interp.text || []).forEach(para => {
+        const p = document.createElement('p');
+        p.textContent = para;
+        copyDiv.appendChild(p);
+      });
+      interpSection.appendChild(copyDiv);
+
+      if (interp.reflectionPrompt) {
+        const promptBox = document.createElement('div');
+        promptBox.className = 'reflection-prompt-box';
+        promptBox.innerHTML = `
+          <b>A Thought for the Reader</b>
+          <p>“${escapeHTML(interp.reflectionPrompt)}”</p>
+        `;
+        interpSection.appendChild(promptBox);
+      }
+
+      interpContainer.appendChild(interpSection);
+    }
+
+    // Prev / Next Navigation
+    const currentIndex = writings.indexOf(post);
+    const prevPost = currentIndex > 0 ? writings[currentIndex - 1] : null;
+    const nextPost = currentIndex < writings.length - 1 ? writings[currentIndex + 1] : null;
+
+    const navLinks = document.getElementById('readerNavLinks');
+    if (navLinks) {
+      navLinks.innerHTML = `
+        ${prevPost ? `<button class="text-link" id="prevPostBtn">← ${escapeHTML(prevPost.title)}</button>` : '<span></span>'}
+        ${nextPost ? `<button class="text-link" id="nextPostBtn">${escapeHTML(nextPost.title)} →</button>` : '<span></span>'}
+      `;
+      const prevBtn = document.getElementById('prevPostBtn');
+      if (prevBtn) prevBtn.addEventListener('click', () => openPost(prevPost));
+      const nextBtn = document.getElementById('nextPostBtn');
+      if (nextBtn) nextBtn.addEventListener('click', () => openPost(nextPost));
+    }
+
+    // Standalone direct page link
+    const directLink = document.getElementById('readerDirectLink');
+    if (directLink) {
+      directLink.href = `writings/${post.id}.html`;
+    }
+
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePost() {
+    if (!modal) return;
+    if (typeof modal.close === 'function') {
+      modal.close();
+    } else {
+      modal.removeAttribute('open');
+    }
+    document.body.style.overflow = '';
+    if (location.hash.startsWith('#writing-')) {
+      history.replaceState(null, '', '#writings');
+    }
+  }
+
+  // Deep Link Handling
+  function checkHash() {
+    const hash = window.location.hash;
+    const match = hash.match(/^#writing-(.+)$/);
+    if (match) {
+      const found = writings.find(item => item.id === match[1]);
+      if (found) {
+        openPost(found, false);
+      }
+    }
+  }
+
+  window.addEventListener('hashchange', checkHash);
+
+  // 5. Featured Poem Read Button
+  const featuredReadBtn = document.getElementById('featuredRead');
+  if (featuredReadBtn) {
+    featuredReadBtn.addEventListener('click', () => {
+      const firstPoem = writings.find(p => p.id === 'the-last-dream') || writings[0];
+      if (firstPoem) openPost(firstPoem);
+    });
+  }
+
+  // 6. Category filters & Doorways
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFilter = btn.dataset.filter || 'All';
+      filters.forEach(f => {
+        const isMatch = f === btn;
+        f.classList.toggle('active', isMatch);
+        f.setAttribute('aria-pressed', String(isMatch));
+      });
+      renderPosts();
+    });
+  });
+
+  document.querySelectorAll('[data-jump-category]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const cat = link.dataset.jumpCategory;
+      activeFilter = ['Poetry', 'Reflections', 'Articles'].includes(cat) ? cat : 'All';
+      filters.forEach(f => {
+        const isMatch = f.dataset.filter === activeFilter;
+        f.classList.toggle('active', isMatch);
+        f.setAttribute('aria-pressed', String(isMatch));
+      });
+      renderPosts();
+    });
+  });
+
+  // 7. Search Input
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      renderPosts();
+    });
+  }
+
+  // 8. Event Delegation for Post Clicks
+  if (grid) {
+    grid.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-open]');
+      if (btn) {
+        const postId = btn.dataset.open;
+        const post = writings.find(p => p.id === postId);
+        if (post) openPost(post);
+      }
+    });
+  }
+
+  // 9. Modal Close & Share
+  const closeBtn = document.getElementById('closeReader');
+  if (closeBtn) closeBtn.addEventListener('click', closePost);
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closePost();
+    });
+    modal.addEventListener('cancel', () => {
+      document.body.style.overflow = '';
+      if (location.hash.startsWith('#writing-')) {
+        history.replaceState(null, '', '#writings');
+      }
+    });
+  }
+
+  const shareBtn = document.getElementById('sharePiece');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      if (!activePost) return;
+      const shareData = {
+        title: `${activePost.title} — Nijaaswini`,
+        text: activePost.excerpt || 'Thoughts that stay...',
+        url: window.location.origin + window.location.pathname + `#writing-${activePost.id}`
+      };
+
+      try {
+        if (navigator.share) {
+          await navigator.share(shareData);
+        } else if (navigator.clipboard) {
+          await navigator.clipboard.writeText(`${shareData.title}\n${shareData.url}`);
+          const orig = shareBtn.textContent;
+          shareBtn.textContent = 'Link copied to clipboard ✓';
+          setTimeout(() => { shareBtn.textContent = orig; }, 2400);
+        } else {
+          window.prompt('Copy direct link:', shareData.url);
+        }
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          window.prompt('Copy direct link:', shareData.url);
+        }
+      }
+    });
+  }
+
+  // 10. Theme Toggle
+  const savedTheme = localStorage.getItem('nijaaswini-theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    if (themeToggle) themeToggle.textContent = '☼';
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark-mode');
+      themeToggle.textContent = isDark ? '☼' : '☾';
+      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+      localStorage.setItem('nijaaswini-theme', isDark ? 'dark' : 'light');
+    });
+  }
+
+  // 11. Mobile Navigation Drawer
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+      siteNav.classList.toggle('nav-open', !isExpanded);
+    });
+
+    siteNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        siteNav.classList.remove('nav-open');
+      });
+    });
+  }
+
+  // 12. Contact Form Validation and Netlify static handling
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+
+  if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', (e) => {
+      const name = document.getElementById('contactName')?.value.trim();
+      const email = document.getElementById('contactEmail')?.value.trim();
+      const message = document.getElementById('contactMessage')?.value.trim();
+
+      if (!name || !email || !message) {
+        e.preventDefault();
+        formStatus.className = 'form-status-msg status-error';
+        formStatus.textContent = 'Please complete all required fields before sending.';
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        e.preventDefault();
+        formStatus.className = 'form-status-msg status-error';
+        formStatus.textContent = 'Please provide a valid email address.';
+        return;
+      }
+
+      // If running locally without Netlify server handling, show helpful prompt
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:') {
+        e.preventDefault();
+        const subject = encodeURIComponent(document.getElementById('contactSubject')?.value || 'A note from a reader');
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        const mailtoUrl = `mailto:hello@nijaaswini.com?subject=${subject}&body=${body}`;
+        formStatus.className = 'form-status-msg status-success';
+        formStatus.innerHTML = `Note ready! Netlify Forms is active for deployment. To send directly now, <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to open your email client</a>.`;
+      }
+    });
+  }
+
+  // 13. Dynamic Year
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Helper Escape HTML
+  function escapeHTML(str) {
+    return String(str || '').replace(/[&<>"']/g, c => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+  }
+
+  // Initial Render & Hash Check
+  renderPosts();
+  checkHash();
+});
+
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to literary content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="NIJAASWINI Homepage">
+      <span class="brand-leaf">❧</span>
+      <div class="wordmark-text">
+        <span class="wordmark-name">NIJAASWINI</span>
+        <span class="wordmark-tag">Poetry · Reflections · Articles</span>
+      </div>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#writings">Writings</a>
+      <a href="about/index.html">About</a>
+      <a href="contact/index.html">Contact</a>
+    </nav>
+
+    <div class="header-tools">
+      <label class="search-box header-search" aria-label="Search collection">
+        <span>⌕</span>
+        <input type="search" id="searchInput" placeholder="Search writings…" aria-label="Search writings">
+      </label>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle warm dark/light theme">☾</button>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open mobile navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="home" aria-label="Hero Introduction">
+      <div class="hero-copy">
+        <span class="eyebrow">A Quiet Literary Space</span>
+        <span class="hero-tagline">“Thoughts that stay...”</span>
+        <h1>Words shaped by <em>memory,</em> longing, and renewal.</h1>
+        <p class="hero-description">
+          Some words are meant to be read slowly. Come in for a poem, stay for the feeling, and leave with a thought of your own.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#writings">
+            Explore My Writings <span>→</span>
+          </a>
+          <a class="button button-secondary" href="about/index.html">
+            Meet the Author
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <span>
+            <b>06</b>
+            <small>Poetry Pieces</small>
+          </span>
+          <span>
+            <b>03</b>
+            <small>Reflections</small>
+          </span>
+          <span>
+            <b>01</b>
+            <small>Shared Heart</small>
+          </span>
+        </div>
+      </div>
+
+      <!-- Cinematic Character Stage -->
+      <div class="hero-visual" aria-label="Cinematic illustrated portrait of Nijaswini Nandru">
+        <div class="character-stage" id="characterStage" title="Move your pointer horizontally across the scene to turn the character">
+          <div class="stage-halo" aria-hidden="true"></div>
+          <div class="stage-halo-inner" aria-hidden="true"></div>
+
+          <!-- HTML5 Canvas Engine -->
+          <canvas id="characterCanvas" class="character-canvas"></canvas>
+
+          <!-- Floating Notes -->
+          <div class="floating-note note-top" aria-hidden="true">
+            Stay for a sentence.<br>Leave with a thought.
+          </div>
+          <div class="floating-note note-bottom" aria-hidden="true">
+            ✦ A corner for words<br>I didn't want to leave unsaid.
+          </div>
+
+          <!-- Engine Telemetry & Controls Pill -->
+          <div class="scrub-telemetry-pill" role="region" aria-label="Character Animation Controls">
+            <div class="telemetry-indicator">
+              <span class="pulse-dot"></span>
+              <span id="scrubStatus">Neutral Pose</span>
+            </div>
+            <span class="telemetry-hint">Scrub:</span>
+            <span class="telemetry-frame-num" id="valFrame">150 / 300</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ethos & Values Strip -->
+    <section class="values-strip" aria-label="Core Themes">
+      <div class="values-item">
+        <span class="value-icon">✧</span>
+        <div class="value-text">
+          <b>Emotional Honesty</b>
+          <small>Feelings expressed without masks</small>
+        </div>
+      </div>
+      <div class="values-item">
+        <span class="value-icon">❧</span>
+        <div class="value-text">
+          <b>Quiet Reflection</b>
+          <small>Words given room to breathe</small>
+        </div>
+      </div>
+      <div class="values-item">
+        <span class="value-icon">✎</span>
+        <div class="value-text">
+          <b>Meaningful Storytelling</b>
+          <small>Unspoken truths given a voice</small>
+        </div>
+      </div>
+      <div class="values-quote">
+        “Different paths.<br>The same heart.”
+      </div>
+    </section>
+
+    <!-- Category Doorways -->
+    <section class="category-section section-wrap" id="categories" aria-labelledby="catHeading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Thought Spaces</p>
+          <h2 id="catHeading">Read what <em>resonates.</em></h2>
+        </div>
+        <p class="heading-note">Choose a doorway into the writing collection.</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="#writings" data-jump-category="All" class="category-card" aria-label="View All Writings">
+          <div class="category-photo-wrap">
+            <img src="assets/images/category-all.jpg" alt="All writings collection" class="category-photo" loading="lazy" onerror="this.style.opacity='0';">
+          </div>
+          <div class="category-info">
+            <span class="category-order">01 / The Collection</span>
+            <h3>All Writings</h3>
+            <p>A quiet stroll through the complete library of poems, reflections, and thoughts.</p>
+            <span class="category-action">Explore all <i>↗</i></span>
+          </div>
+        </a>
+
+        <a href="#writings" data-jump-category="Poetry" class="category-card" aria-label="View Poetry Collection">
+          <div class="category-photo-wrap">
+            <img src="assets/images/category-poetry.jpg" alt="Poetry collection" class="category-photo" loading="lazy" onerror="this.style.opacity='0';">
+          </div>
+          <div class="category-info">
+            <span class="category-order">02 / Words in Rhythm</span>
+            <h3>Poetry</h3>
+            <p>Six original poems touching upon dreams, mirrors, oceans, memories, and farewells.</p>
+            <span class="category-action">Read poetry <i>↗</i></span>
+          </div>
+        </a>
+
+        <a href="#writings" data-jump-category="Reflections" class="category-card" aria-label="View Reflections Collection">
+          <div class="category-photo-wrap">
+            <img src="assets/images/category-reflections.jpg" alt="Reflections collection" class="category-photo" loading="lazy" onerror="this.style.opacity='0';">
+          </div>
+          <div class="category-info">
+            <span class="category-order">03 / Thoughts Taking Shape</span>
+            <h3>Reflections</h3>
+            <p>Introspective passages on growing up, loss, memories, and rediscovering individuality.</p>
+            <span class="category-action">Read reflections <i>↗</i></span>
+          </div>
+        </a>
+
+        <a href="#writings" data-jump-category="Articles" class="category-card" aria-label="View Articles Collection">
+          <div class="category-photo-wrap">
+            <img src="assets/images/category-articles.jpg" alt="Articles collection" class="category-photo" loading="lazy" onerror="this.style.opacity='0';">
+          </div>
+          <div class="category-info">
+            <span class="category-order">04 / Long-Form Perspectives</span>
+            <h3>Articles</h3>
+            <p>Deeper literary essays and perspectives curated by the author, coming soon.</p>
+            <span class="category-action">Learn more <i>↗</i></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Poem Section -->
+    <section class="featured-section section-wrap" aria-labelledby="featuredHeading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A Place to Begin</p>
+          <h2 id="featuredHeading">Featured <em>poem.</em></h2>
+        </div>
+        <span class="heading-note">01 — The Collection Opening</span>
+      </div>
+
+      <article class="featured-card">
+        <div class="featured-visual">
+          <img src="assets/images/the-last-dream.jpg" alt="A child looking out towards a war-torn sunset sky" loading="lazy" onerror="this.style.opacity='0';">
+          <span class="featured-stamp">FEATURED POEM</span>
+          <span class="featured-visual-caption">“I wished it was all a dream...”</span>
+        </div>
+        <div class="featured-content">
+          <p class="post-meta">
+            <span>POETRY</span>
+            <span>·</span>
+            <span>A NOTE FROM THE AUTHOR</span>
+          </p>
+          <h3>The Last Dream</h3>
+          <p class="featured-excerpt">
+            A child's dreams of light and life are swallowed by the sounds of war.
+          </p>
+          <div>
+            <button class="button button-primary" id="featuredRead">
+              Begin Reading <span>→</span>
+            </button>
+          </div>
+          <p class="featured-footnote">
+            Read the authentic poem first. Discover the author’s “Behind the Lines” interpretation after.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Complete Writings Library -->
+    <section class="writing-section section-wrap" id="writings" aria-labelledby="writingsHeading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Take Your Time</p>
+          <h2 id="writingsHeading">The <em>writings.</em></h2>
+        </div>
+        <span class="writing-count-badge" id="writingCountBadge">Showing 9 writings</span>
+      </div>
+
+      <div class="writing-tools">
+        <div class="filters" role="group" aria-label="Filter writings by category">
+          <button class="filter active" data-filter="All" aria-pressed="true">All Works</button>
+          <button class="filter" data-filter="Poetry" aria-pressed="false">Poetry (6)</button>
+          <button class="filter" data-filter="Reflections" aria-pressed="false">Reflections (3)</button>
+          <button class="filter" data-filter="Articles" aria-pressed="false">Articles</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Post Cards Grid -->
+      <div class="post-grid" id="postGrid" aria-live="polite">
+        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="the-last-dream" aria-label="Read The Last Dream">
+            <div class="post-art">
+              <img src="assets/images/the-last-dream.jpg" alt="A child looking toward a stormy sky bathed in sunset and the smoke of conflict" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">01</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>A note from the author</span>
+              </p>
+              <h3>The Last Dream</h3>
+              <p class="post-excerpt">A child's dreams of light and life are swallowed by the sounds of war.</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="stranger-in-the-mirror" aria-label="Read Stranger in the Mirror">
+            <div class="post-art">
+              <img src="assets/images/stranger-in-the-mirror.jpg" alt="A contemplative silhouette looking into a mirror framed by soft shadows" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">02</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>A note from the author</span>
+              </p>
+              <h3>Stranger in the Mirror</h3>
+              <p class="post-excerpt">I stare into the mirror, but who stares back?</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="i-was-just-there" aria-label="Read I Was Just There">
+            <div class="post-art">
+              <img src="assets/images/i-was-just-there.jpg" alt="A solitary contemplative figure standing by vast rolling ocean waves at twilight" loading="lazy" onerror="this.onerror=null; this.src='assets/images/home-window.jpg';">
+              <span class="post-art-number">03</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>A note from the author</span>
+              </p>
+              <h3>I Was Just There</h3>
+              <p class="post-excerpt">No words—just echoes of waves, crashing into me, from ocean graves.</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="the-waves-that-keep-me-bound" aria-label="Read The Waves That Keep Me Bound">
+            <div class="post-art">
+              <img src="assets/images/the-waves-that-keep-me-bound.jpg" alt="Shoreline waves rolling gently onto sand during golden hour, reflecting returning memories" loading="lazy" onerror="this.onerror=null; this.src='assets/images/home-window.jpg';">
+              <span class="post-art-number">04</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>July 2024</span>
+              </p>
+              <h3>The Waves That Keep Me Bound</h3>
+              <p class="post-excerpt">I long to leave my memories, to make a wave, to ride the tides and find my way.</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="the-life-that-remained-sealed" aria-label="Read The Life That Remained Sealed">
+            <div class="post-art">
+              <img src="assets/images/the-life-that-remained-sealed.jpg" alt="An antique closed leather journal with gold botanical clasp resting on a dark wooden library desk with a warm glowing lamp" loading="lazy" onerror="this.onerror=null; this.src='assets/images/home-window.jpg';">
+              <span class="post-art-number">05</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>December 2024</span>
+              </p>
+              <h3>The Life That Remained Sealed</h3>
+              <p class="post-excerpt">The book that was never read, the lines that were never spoken.</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Poetry">
+          <button class="post-card-btn" data-open="until-we-say-hello-again" aria-label="Read Until We Say Hello Again">
+            <div class="post-art">
+              <img src="assets/images/until-we-say-hello-again.jpg" alt="Two distant figures gazing across a peaceful sunset shoreline" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">06</span>
+              <span class="post-art-category">Poetry</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Poetry</span>
+                <span>·</span>
+                <span>A note from the author</span>
+              </p>
+              <h3>Until We Say Hello Again</h3>
+              <p class="post-excerpt">So here’s to the friend who was once Unknown.</p>
+              <span class="card-read-action">
+                Read complete poem <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Reflections">
+          <button class="post-card-btn" data-open="the-voices-we-slowly-forget" aria-label="Read The Voices We Slowly Forget">
+            <div class="post-art">
+              <img src="assets/images/the-voices-we-slowly-forget.jpg" alt="An empty bench overlooking misty evening trees and twilight shadows" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">07</span>
+              <span class="post-art-category">Reflections</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Reflections</span>
+                <span>·</span>
+                <span>A note from the author</span>
+              </p>
+              <h3>The Voices We Slowly Forget</h3>
+              <p class="post-excerpt">Losing the people you love feels like losing a part of yourself.</p>
+              <span class="card-read-action">
+                Read complete piece <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Reflections">
+          <button class="post-card-btn" data-open="reality" aria-label="Read Reality">
+            <div class="post-art">
+              <img src="assets/images/reality.jpg" alt="A lone traveler looking out over vast layered horizons and gentle morning mist" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">08</span>
+              <span class="post-art-category">Reflections</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Reflections</span>
+                <span>·</span>
+                <span>September 2024</span>
+              </p>
+              <h3>Reality</h3>
+              <p class="post-excerpt">Teenager to adult transformation is the difficult phase of life because this is the period in which we fight with ourselves.</p>
+              <span class="card-read-action">
+                Read complete piece <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <article class="post-card" data-category="Reflections">
+          <button class="post-card-btn" data-open="when-did-we-change" aria-label="Read When Did We Change?">
+            <div class="post-art">
+              <img src="assets/images/when-did-we-change.jpg" alt="A quiet room with evening moonlight casting soft window reflections" loading="lazy" onerror="this.style.opacity='0';">
+              <span class="post-art-number">09</span>
+              <span class="post-art-category">Reflections</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Reflections</span>
+                <span>·</span>
+                <span>August 2024</span>
+              </p>
+              <h3>When Did We Change?</h3>
+              <p class="post-excerpt">When did we change from laughing freely to hiding behind forced smiles?</p>
+              <span class="card-read-action">
+                Read complete piece <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>        <div class="placeholder-card" id="renewal-placeholder">
+          <span class="placeholder-badge">Awaiting Author Manuscript</span>
+          <h3>Renewal</h3>
+          <p>This identified reflection piece by Nijaswini Nandru is currently in preparation. The authentic original text will be published here upon release by the author.</p>
+        </div>
+        <article class="post-card" data-category="Articles">
+          <button class="post-card-btn" data-open="they-were-supposed-to-come-back" aria-label="Read THEY WERE SUPPOSED TO COME BACK">
+            <div class="post-art">
+              <img src="assets/images/they-were-supposed-to-come-back.jpg" alt="A lone glowing lantern on misty riverbanks beside swollen mountain waters at twilight" loading="lazy" onerror="this.onerror=null; this.src='assets/images/home-window.jpg';">
+              <span class="post-art-number">10</span>
+              <span class="post-art-category">Articles</span>
+            </div>
+            <div class="post-card-content">
+              <p class="post-meta">
+                <span>Articles</span>
+                <span>·</span>
+                <span>October 2026</span>
+              </p>
+              <h3>THEY WERE SUPPOSED TO COME BACK</h3>
+              <p class="post-excerpt">Somewhere beyond the flooded riverbanks, a search continued, a family waited, and a trail of unanswered questions grew longer.</p>
+              <span class="card-read-action">
+                Read complete article <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </button>
+        </article>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" hidden>
+        <h4>No writings match your search</h4>
+        <p>Try searching for a different phrase or clear your filter to wander freely through the library.</p>
+      </div>
+    </section>
+
+    <!-- Literary Quote Band -->
+    <section class="quote-band" aria-label="A Thought From Nijaaswini">
+      <blockquote>
+        “Some feelings don't ask for answers.<br>
+        They only ask for a place to be heard.”
+      </blockquote>
+      <cite>— A note from Nijaaswini Nandru</cite>
+    </section>
+
+    <!-- About the Author (Preview) -->
+    <section class="about-section section-wrap" id="about" aria-labelledby="aboutHeading">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Behind the Words</p>
+          <h2 id="aboutHeading">Hello, I'm<br><em>Nijaswini.</em></h2>
+          <p>
+            A writer, a thinker, and someone who finds meaning in the little things that linger in our thoughts long after the world moves on.
+          </p>
+          <p>
+            This website is my private literary sanctuary—a place for poems, reflections, and articles shaped by memory, unspoken feelings, waiting, and personal renewal.
+          </p>
+          <p>
+            Some words arrive like warm sunshine; others arrive with the rumble of a sudden storm. All of them are welcomed here with emotional honesty.
+          </p>
+          <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a class="button button-primary" href="about/index.html">
+              Read Full Biography <span>→</span>
+            </a>
+            <a class="button button-secondary" href="contact/index.html">
+              Send a Note
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Invitation -->
+    <section class="contact-section" id="contact" aria-labelledby="contactHeading">
+      <div class="contact-inner">
+        <p class="eyebrow">The Door Is Always Open</p>
+        <h2 id="contactHeading">Have a thought?<br><em>Let's exchange words.</em></h2>
+        <p>
+          Found a line that resonated with you? Have your own interpretation of a poem? Readers are always invited to share their thoughts.
+        </p>
+
+        <!-- Netlify Static Form Compatible -->
+        <form class="contact-form" id="contactForm" name="reader-notes" method="POST" data-netlify="true" netlify>
+          <input type="hidden" name="form-name" value="reader-notes">
+
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" name="name" placeholder="How should Nijaswini address you?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Your Email Address</label>
+            <input type="email" id="contactEmail" name="email" placeholder="Where may the author reply?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" name="subject">
+              <option value="Thoughts on a poem">Thoughts on a poem</option>
+              <option value="A note of appreciation">A note of appreciation</option>
+              <option value="Personal reflection">Personal reflection</option>
+              <option value="General reader enquiry">General reader enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Your Message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Write whatever is on your mind..." required></textarea>
+            <p class="form-helper">Words sent here are received with gratitude and care.</p>
+          </div>
+
+          <button type="submit" class="button button-primary" style="width: 100%;">
+            Send Note to Nijaswini <span>↗</span>
+          </button>
+
+          <div class="form-status-msg" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <a class="wordmark" href="#home" aria-label="NIJAASWINI">
+      <span class="brand-leaf">❧</span>
+      <div class="wordmark-text">
+        <span class="wordmark-name">NIJAASWINI</span>
+        <span class="wordmark-tag">Thoughts that stay...</span>
+      </div>
+    </a>
+
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <a href="#home">Home</a>
+      <a href="#writings">Writings</a>
+      <a href="about/index.html">About</a>
+      <a href="contact/index.html">Contact</a>
+      <a href="https://app.netlify.com/drop" target="_blank" rel="noopener">Netlify Drop Ready</a>
+    </nav>
+
+    <div class="footer-copyright">
+      <p>© <span id="currentYear"></span> Nijaswini Nandru. All writings, poems, and reflections belong to the author.</p>
+    </div>
+  </footer>
+
+  <!-- Reader Modal Dialog -->
+  <dialog class="reader-modal" id="readerModal" aria-labelledby="readerTitle">
+    <div class="reader-header">
+      <span class="reader-brand">NIJAASWINI ❧</span>
+      <button class="reader-close-btn" id="closeReader" aria-label="Close reader">✕</button>
+    </div>
+
+    <div class="reader-body">
+      <div class="reader-hero-visual">
+        <img id="readerVisual" src="assets/images/home-window.jpg" alt="Writing cover visual" onerror="this.style.opacity='0';">
+      </div>
+
+      <p class="post-meta" id="readerMeta"></p>
+      <h2 class="reader-title" id="readerTitle"></h2>
+      <p class="reader-lead" id="readerLead"></p>
+
+      <!-- Exact Body Text -->
+      <div id="readerText"></div>
+
+      <!-- Behind the Lines / Author Interpretation -->
+      <div id="readerInterpretation"></div>
+
+      <!-- Actions & Navigation -->
+      <div class="reader-actions">
+        <div class="reader-nav-links" id="readerNavLinks"></div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a class="text-link" id="readerDirectLink" href="#" target="_blank">Dedicated Page ↗</a>
+          <button class="button button-secondary" id="sharePiece">Share This Writing ↗</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
