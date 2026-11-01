@@ -463,18 +463,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 12. Contact Form Validation and Netlify static handling
+  // 12. Contact Form Direct Submission to pagesforsages@gmail.com
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
   if (contactForm && formStatus) {
     contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
       const name = document.getElementById('contactName')?.value.trim();
       const email = document.getElementById('contactEmail')?.value.trim();
       const message = document.getElementById('contactMessage')?.value.trim();
+      const subject = document.getElementById('contactSubject')?.value || 'A note from a reader';
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
 
       if (!name || !email || !message) {
-        e.preventDefault();
         formStatus.className = 'form-status-msg status-error';
         formStatus.textContent = 'Please complete all required fields before sending.';
         return;
@@ -482,21 +484,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        e.preventDefault();
         formStatus.className = 'form-status-msg status-error';
         formStatus.textContent = 'Please provide a valid email address.';
         return;
       }
 
-      // If running locally without Netlify server handling, show helpful prompt
-      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:') {
-        e.preventDefault();
-        const subject = encodeURIComponent(document.getElementById('contactSubject')?.value || 'A note from a reader');
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-        const mailtoUrl = `mailto:hello@nijaaswini.com?subject=${subject}&body=${body}`;
+      formStatus.className = 'form-status-msg';
+      formStatus.style.display = 'block';
+      formStatus.textContent = 'Sending your note to Nijaswini...';
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch('https://formsubmit.co/ajax/pagesforsages@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+          _subject: `NIJAASWINI Reader Note: ${subject}`
+        })
+      })
+      .then(res => {
+        if (res.ok) return res.json();
+        throw new Error('Network error');
+      })
+      .then(() => {
         formStatus.className = 'form-status-msg status-success';
-        formStatus.innerHTML = `Note ready! Netlify Forms is active for deployment. To send directly now, <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to open your email client</a>.`;
-      }
+        formStatus.innerHTML = `✦ Thank you, <strong>${escapeHTML(name)}</strong>! Your note has been delivered directly to Nijaswini at <strong>pagesforsages@gmail.com</strong>. She will read it with care and reply to ${escapeHTML(email)}.`;
+        contactForm.reset();
+      })
+      .catch(() => {
+        const mailtoUrl = `mailto:pagesforsages@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+        formStatus.className = 'form-status-msg status-success';
+        formStatus.innerHTML = `Note ready! To send directly from your email app, <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to email pagesforsages@gmail.com</a>.`;
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
+      });
     });
   }
 

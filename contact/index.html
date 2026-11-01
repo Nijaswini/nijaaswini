@@ -1934,19 +1934,26 @@ img {
         });
       }
 
-      // Form validation & dispatch
+      function escapeHTML(str) {
+        return String(str || '').replace(/[&<>"']/g, c => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+      }
+
+      // Form validation & dispatch to pagesforsages@gmail.com
       const form = document.getElementById('contactPageForm');
       const statusEl = document.getElementById('pageFormStatus');
 
       if (form && statusEl) {
         form.addEventListener('submit', (e) => {
-          const name = document.getElementById('pageName').value.trim();
-          const email = document.getElementById('pageEmail').value.trim();
-          const message = document.getElementById('pageMessage').value.trim();
-          const subject = document.getElementById('pageSubject').value;
+          e.preventDefault();
+          const name = document.getElementById('pageName')?.value.trim();
+          const email = document.getElementById('pageEmail')?.value.trim();
+          const message = document.getElementById('pageMessage')?.value.trim();
+          const subject = document.getElementById('pageSubject')?.value || 'A note from a reader';
+          const submitBtn = form.querySelector('button[type="submit"]');
 
           if (!name || !email || !message) {
-            e.preventDefault();
             statusEl.className = 'form-status-msg status-error';
             statusEl.textContent = 'Please fill out all required fields (Name, Email, Message).';
             return;
@@ -1954,19 +1961,47 @@ img {
 
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailRegex.test(email)) {
-            e.preventDefault();
             statusEl.className = 'form-status-msg status-error';
             statusEl.textContent = 'Please enter a valid email address.';
             return;
           }
 
-          // If running locally without live Netlify backend
-          if (window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            e.preventDefault();
-            const mailtoUrl = `mailto:hello@nijaaswini.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+          statusEl.className = 'form-status-msg';
+          statusEl.style.display = 'block';
+          statusEl.textContent = 'Sending your note to Nijaswini...';
+          if (submitBtn) submitBtn.disabled = true;
+
+          fetch('https://formsubmit.co/ajax/pagesforsages@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              subject: subject,
+              message: message,
+              _subject: `NIJAASWINI Reader Note: ${subject}`
+            })
+          })
+          .then(res => {
+            if (res.ok) return res.json();
+            throw new Error('Network error');
+          })
+          .then(() => {
             statusEl.className = 'form-status-msg status-success';
-            statusEl.innerHTML = `Form validated! When deployed on Netlify, submissions are captured directly. To deliver your message locally, <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to open in your mail app</a>.`;
-          }
+            statusEl.innerHTML = `✦ Thank you, <strong>${escapeHTML(name)}</strong>! Your note has been delivered directly to Nijaswini at <strong>pagesforsages@gmail.com</strong>. She will read it with care and reply to ${escapeHTML(email)}.`;
+            form.reset();
+          })
+          .catch(() => {
+            const mailtoUrl = `mailto:pagesforsages@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+            statusEl.className = 'form-status-msg status-success';
+            statusEl.innerHTML = `Note ready! If direct sending was restricted by your browser, <a href="${mailtoUrl}" style="text-decoration: underline; font-weight: 600;">click here to email pagesforsages@gmail.com</a>.`;
+          })
+          .finally(() => {
+            if (submitBtn) submitBtn.disabled = false;
+          });
         });
       }
     });
@@ -2012,9 +2047,13 @@ img {
         Whether a line touched a quiet memory, sparked a question, or offered a moment of solace, Nijaswini welcomes notes from readers who walk through these pages.
       </p>
 
-      <!-- Netlify-compatible form -->
-      <form class="contact-form" id="contactPageForm" name="contact-page" method="POST" data-netlify="true" netlify>
+      <!-- Direct Email Form Submission to pagesforsages@gmail.com -->
+      <form class="contact-form" id="contactPageForm" name="contact-page" action="https://formsubmit.co/pagesforsages@gmail.com" method="POST" data-netlify="true" netlify>
         <input type="hidden" name="form-name" value="contact-page">
+        <input type="hidden" name="_subject" value="New Reader Note — NIJAASWINI">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
 
         <div class="form-group">
           <label for="pageName">Your Name *</label>
@@ -2050,16 +2089,16 @@ img {
         <div class="form-status-msg" id="pageFormStatus" role="status"></div>
       </form>
 
-      <!-- Honest Hosting Configuration Information -->
+      <!-- Direct Author Contact Information -->
       <div style="margin-top: 48px; padding: 24px; background: var(--bg-card-subtle); border: 1px dashed var(--border-gold); border-radius: var(--radius-md); text-align: left;">
         <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--color-ink-headings); margin-bottom: 8px;">
-          ✦ Note on Message Delivery & Netlify Hosting
+          ✦ Direct Author Contact
         </h4>
         <p style="font-size: 0.88rem; color: var(--color-ink-muted); line-height: 1.6; margin-bottom: 10px;">
-          This contact form is equipped with standard <code>data-netlify="true"</code> tags. When you drag and drop the website folder into Netlify Drop, Netlify will automatically detect and manage form submissions under your site’s <strong>Forms</strong> tab without any server configuration.
+          Every note submitted through this form is delivered directly to Nijaswini at <a href="mailto:pagesforsages@gmail.com" style="color: var(--color-olive); font-weight: 600; text-decoration: underline;">pagesforsages@gmail.com</a>.
         </p>
         <p style="font-size: 0.88rem; color: var(--color-ink-subtle); line-height: 1.6;">
-          To receive instant email notifications for new messages, simply navigate to <em>Site Settings → Forms → Form Notifications</em> in your Netlify dashboard and specify your personal email address.
+          You are also warmly welcomed to write directly from your email app anytime.
         </p>
       </div>
     </div>
