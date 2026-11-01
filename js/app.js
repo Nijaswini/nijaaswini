@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
           email: email,
           subject: subject,
           message: message,
-          _subject: `NIJAASWINI Reader Note: ${subject}`
+          _subject: `Pages for Sages Reader Note: ${subject}`
         })
       })
       .then(res => {

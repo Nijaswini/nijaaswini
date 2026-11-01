@@ -1,4 +1,4 @@
-# NIJAASWINI — Master Author Website
+# Pages for Sages — Master Author Website
 
 **Author:** Nijaswini Nandru  
 **Tagline:** “Thoughts that stay...”  

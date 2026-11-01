@@ -1,4 +1,4 @@
-# NIJAASWINI — Cinematic 3D Character Turnaround Frame Specification
+# Pages for Sages — Cinematic 3D Character Turnaround Frame Specification
 
 This specification outlines the technical and creative standards for the 300-frame turning sequence rendered in the author hero section of **NIJAASWINI**.
 
